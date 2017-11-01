@@ -1,0 +1,21 @@
+topnav:
+- title: Topnav
+  items:
+
+topnav_dropdowns:
+- title: Topnav dropdowns
+  folders:
+    - title: External Links
+      folderitems:        
+        - title: OpenID Connect
+          external_url: http://openid.net/connect/
+        - title: OAuth 2.0 Authorization Framework
+          external_url: https://tools.ietf.org/html/rfc6749
+        - title: The OAuth 2.0 Authorization Framework Bearer Token Usage
+          external_url: https://tools.ietf.org/html/rfc6750
+        - title: JSON Web Token
+          external_url: https://tools.ietf.org/html/rfc7519        
+        - title: JSON Web Signature
+          external_url: https://tools.ietf.org/html/rfc7515        
+        - title: JSON Web Encryption
+          external_url: https://tools.ietf.org/html/rfc7516        

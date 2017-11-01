@@ -1,0 +1,40 @@
+entries:
+- title: Product Title
+  product: OpenID Connect<br/>
+  version: 1.0.0-alpha.1
+  levels: one
+  folders:
+
+  - title: Get Started
+    output: web
+    folderitems:
+    - title: Introduction
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+  - title: OpenID Connect
+    output: web
+    folderitems:
+    - title: Overview
+      url: /explore_intro_to_oidc.html
+      output: web
+    - title: Authorization Code Flow in Detail
+      url: /explore_auth_code_flow.html
+      output: web
+    - title: Other Features
+      url: /explore_other_features.html
+      output: web
+ 
+  - title: NHS Digital Implementation
+    output: web
+    folderitems:
+    - title: Overview
+      url: /develop_intro_to_nhs_impl.html
+      output: web
+    - title: Online Authentication in Detail
+      url: /develop_nhs_impl.html
+      output: web
+    - title: Offline Authentication in Detail
+      url: /develop_nhs_offline_impl.html
+      output: web
