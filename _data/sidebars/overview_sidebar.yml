@@ -1,40 +1,100 @@
 entries:
-- title: Product Title
-  product: OpenID Connect<br/>
+- title: Care Access Service
+  product: Care Access Service<br/>
   version: 1.0.0-alpha.1
   levels: one
   folders:
 
-  - title: Get Started
+  - title: Introduction to CAS
+    output: web
+    folderitems:
+    - title: Introduction 
+      url: /index.html
+      output: web 
+      type: homepage
+    - title: Authentication
+      url: /Intro_Authentication.html
+      output: web      
+    - title: Authorisation
+      url: /Intro_Authorisation.html
+      output: web
+    - title: API Gateway
+      url: /Intro_APIGateway.html
+      output: web
+    - title: Federation
+      url: /Intro_Federation.html
+      output: web
+    
+  - title: Authentication Types
+    output: web
+    folderitems:
+    - title: Legacy Smart Card Authentication
+      url: /AuthType_SmartCard.html
+      output: web
+    - title: One Time Password
+      url: /AuthType_OTP.html
+      output: web 
+    - title: Push Notification
+      url: /AuthType_PushNotification.html
+      output: web
+    - title: Fido 2.0
+      url: /AuthType_FIDO.html
+      output: web
+             
+                
+  - title: Technical Overview
+    output: web
+    folderitems:
+    - title: Overview of Open ID Connect
+      url: /explore_intro_to_oidc.html
+      output: web
+    - title: OAuth 2.0 Authorization Code Flow in Detail
+      url: /explore_auth_code_flow.html
+      output: web
+    - title: Smart on FHIR
+      url: /TechOverview_SmartOnFHIR.html
+      output: web
+     
+  - title: NHS Implementation Guidelines
     output: web
     folderitems:
     - title: Introduction
-      url: /index.html
-      output: web, pdf
-      type: homepage
-
-  - title: OpenID Connect
-    output: web
-    folderitems:
-    - title: Overview
-      url: /explore_intro_to_oidc.html
+      url: /ImpGuide_Intro.html
       output: web
-    - title: Authorization Code Flow in Detail
-      url: /explore_auth_code_flow.html
-      output: web
-    - title: Other Features
-      url: /explore_other_features.html
-      output: web
- 
-  - title: NHS Digital Implementation
-    output: web
-    folderitems:
-    - title: Overview
-      url: /develop_intro_to_nhs_impl.html
-      output: web
-    - title: Online Authentication in Detail
+    - title: Online Authentication in Detail - it works
       url: /develop_nhs_impl.html
       output: web
     - title: Offline Authentication in Detail
       url: /develop_nhs_offline_impl.html
+      output: web
+     
+     
+  - title: Environment 
+    output: web
+    folderitems:
+    - title: Legacy Smart Card Authentication - 1
+      url: /develop_legacyAuthentication_impl.html
+      output: web
+    - title: One Time Password
+      url: /develop_OTPIntro_impl.html
+      output: web
+    - title: Push Notification
+      url: /develop_PushNotification_impl.html
+      output: web 
+     
+  - title: Glossary of Terms
+    output: web
+    folderitems: 
+    - title: Introduction
+      url: /index.html
+      output: web
+      
+  - title:  Other useful resources
+    output: web
+    folderitems:
+    - title:  Useful links
+      url: /index.html
+      output: web
+    - title: FAQ
+      url: /index.html
       output: web
