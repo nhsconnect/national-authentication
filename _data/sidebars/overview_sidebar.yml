@@ -28,14 +28,32 @@ entries:
   - title: Authentication Types
     output: web
     folderitems:
+    - title: Introduction 
+      url: /Authen_type_Intro.html
+      output: web 
     - title: Legacy Smart Card Authentication
       url: /AuthType_SmartCard.html
       output: web
-    - title: One Time Password
-      url: /AuthType_OTP.html
+    - title: OpenID Connect Smart Card Authentication
+      url: /AuthType_OpenIDC_SC.html
+      output: web
+    - title: One Time Password (OATH)
+      url: /AuthType_OATH.html
       output: web 
+    - title: HMAC One Time Password (HOTP)
+      url: /AuthType_HOPT.html
+      output: web
     - title: Push Notification
-      url: /AuthType_PushNotification.html
+      url: /AuthType_PN.html
+      output: web
+    - title: Knowledge Based Authentication
+      url: /AuthType_KBAuth.html
+      output: web
+    - title: Certificates (X509)
+      url: /AuthType_Certs.html
+      output: web
+    - title: Device Based Authentication
+      url: /AuthType_DeviceBased.html
       output: web
     - title: Fido 2.0
       url: /AuthType_FIDO.html
@@ -45,6 +63,9 @@ entries:
   - title: Technical Overview
     output: web
     folderitems:
+    - title: Introduction 
+      url: /Tech_Intro.html
+      output: web 
     - title: Overview of Open ID Connect
       url: /explore_intro_to_oidc.html
       output: web
@@ -72,6 +93,9 @@ entries:
   - title: Environment 
     output: web
     folderitems:
+    - title: Introduction 
+      url: /index.html
+      output: web 
     - title: Legacy Smart Card Authentication - 1
       url: /develop_legacyAuthentication_impl.html
       output: web
@@ -92,6 +116,9 @@ entries:
   - title:  Other useful resources
     output: web
     folderitems:
+    - title: Introduction 
+      url: /index.html
+      output: web 
     - title:  Useful links
       url: /index.html
       output: web

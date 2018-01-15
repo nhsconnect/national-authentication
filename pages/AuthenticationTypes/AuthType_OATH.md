@@ -2,7 +2,7 @@
 title: One Time Password Authentication
 keywords: homepage
 sidebar: overview_sidebar
-permalink: AuthType_OTP.html
+permalink: AuthType_OATH.html
 toc: true
 summary: A brief introduction to to One Time Password (OATH).
 ---
