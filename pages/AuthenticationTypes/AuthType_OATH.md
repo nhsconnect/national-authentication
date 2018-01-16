@@ -9,5 +9,5 @@ summary: A brief introduction to to One Time Password (OATH).
 
 The Authenticator (OATH) module provides a more secure method for users to access their accounts with the help of a device such as a mobile phone. 
 
-![One Time Password](images/OTPScreen.jpg)
+![One Time Password](images/OTP_OATH.PNG)
 
