@@ -30,8 +30,8 @@ In alignment with the goals of 2020 Paperless NHS it is the vision of the Access
 
 ### Overview of Care Access Services (CAS)
 
-This is a PNG image 
-![PNG Image](images/Capture.PNG)
+<!-- This is a PNG image 
+![PNG Image](images/Capture.PNG) -->
 
 The diagram below shows the main functional services offered by the new Care Access Service.
 
@@ -45,7 +45,7 @@ Care Access Service will deliver the following services for Care Professional as
 * Federation
 
 The following sections will detail the remit of each of these services.
-One time Password
+<!-- One time Password
 ![One Time Password](images/OTP_OATH.PNG)
 
 HMAC One time Password
@@ -60,7 +60,7 @@ Push Notification Screen 2
 
 ![Push Notification - touch ID for Forgerock](images/PushNotification2.PNG)
 
-This is a 
+This is a -->
 
 
 
