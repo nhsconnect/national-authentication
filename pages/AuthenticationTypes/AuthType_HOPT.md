@@ -7,7 +7,11 @@ toc: true
 summary: A brief overview of the HMAC One Time Password Authentication type within NHS Digital's Care Access Service.
 ---
 
-![HMAC OneTime Password](images/OTPLogOnScreen.jpg)
+
+
+![HMAC OneTime Password](images/HOTP.PNG)
+
+
 
 The HOTP authentication module uses the requestors username and retrieves the user's email address or telephone number to send a one-time password to the user. 
 
