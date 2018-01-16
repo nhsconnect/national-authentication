@@ -46,21 +46,21 @@ Care Access Service will deliver the following services for Care Professional as
 
 The following sections will detail the remit of each of these services.
 <!-- One time Password
-![One Time Password](images/OTP_OATH.PNG)
+![One Time Password](images/OTP_OATH.PNG)-->
 
-HMAC One time Password
+<!-- HMAC One time Password -->
 
-![HMAC One Time Password](images/HOTP.PNG)
+<!-- ![HMAC One Time Password](images/HOTP.PNG) -->
 
-Push Notification Screen 1
+<!-- Push Notification Screen 1 -->
 
-![Push Notification Log in forgerock](images/PushNotification1.PNG)
+<!-- ![Push Notification Log in forgerock](images/PushNotification1.PNG) -->
 
-Push Notification Screen 2
+<!-- Push Notification Screen 2 -->
 
-![Push Notification - touch ID for Forgerock](images/PushNotification2.PNG)
+<!-- ![Push Notification - touch ID for Forgerock](images/PushNotification2.PNG) -->
 
-This is a -->
+<!-- This is a -->
 
 
 
