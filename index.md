@@ -31,7 +31,7 @@ In alignment with the goals of 2020 Paperless NHS it is the vision of the Access
 ### Overview of Care Access Services (CAS)
 
 This is a PNG image 
-![PNG Image](images/Capture.png)
+![PNG Image](images/Capture.PNG)
 
 The diagram below shows the main functional services offered by the new Care Access Service.
 
