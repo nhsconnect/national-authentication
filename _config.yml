@@ -103,7 +103,7 @@ repository: rograce/openid-connect-documentation
 gist:
   noscript: false
 
-gems:
+plugins:
    - jekyll-github-metadata
    - jekyll-mentions
    - jemoji
