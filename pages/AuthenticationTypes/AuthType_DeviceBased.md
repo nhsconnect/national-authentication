@@ -15,11 +15,11 @@ The module computes any variances between the collected characteristics to those
 
 In general, you can configure and gather the following device characteristics:
 
-* User agents associated with the configuration of a web browser
-* Installed fonts
-* Plugins installed for the web browser
-* Resolution and color depth associated with a display
-* Timezone or geolocation of a device
+> * User agents associated with the configuration of a web browser
+> * Installed fonts
+> * Plugins installed for the web browser
+> * Resolution and color depth associated with a display
+> * Timezone or geolocation of a device
 
 For example, when a user who typically authenticates to AM using Firefox and then logs on using Chrome, the Device ID (Match) module notes the difference and assigns penalty points to this change in behavior. 
 

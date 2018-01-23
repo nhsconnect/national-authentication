@@ -24,7 +24,20 @@ entries:
     - title: Federation
       url: /Intro_Federation.html
       output: web
-    
+   
+  - title: Security Assurance Levels
+    output: web
+    folderitems:
+    - title: Introduction
+      url: /LOA_intro.html
+      output: web
+    - title:  Identification Assurance Levels
+      url: /LOA_Identification.html
+      output: web
+    - title: Authentication Assurance Levels
+      url: /LOA_Authentication.html
+      output: web
+        
   - title: Authentication Types
     output: web
     folderitems:
@@ -66,23 +79,38 @@ entries:
     - title: Introduction 
       url: /Tech_Intro.html
       output: web 
-    - title: Overview of Open ID Connect
+    - title:  Key Terms and Concepts
+      url: /Tech_KeyTerms.html
+      output: web
+    - title: Actor List
+      url: /Tech_Actors.html
+      output: web
+    - title: Authentication - Open ID Connect
       url: /explore_intro_to_oidc.html
       output: web
-    - title: OAuth 2.0 Authorization Code Flow in Detail
+    - title: Authorisation - OAuth 2.0 
       url: /explore_auth_code_flow.html
       output: web
     - title: Smart on FHIR
       url: /TechOverview_SmartOnFHIR.html
       output: web
-     
+    - title: Artefacts
+      url: /TechOverview_Artefacts.html
+      output: web
+           
   - title: NHS Implementation Guidelines
     output: web
     folderitems:
     - title: Introduction
       url: /ImpGuide_Intro.html
       output: web
-    - title: Online Authentication in Detail - it works
+    - title: Implementing Authentication
+      url: /ImpGuide_OIDC.html
+      output: web
+    - title: Implementing Authorisation
+      url: /ImpGuide_OAuth.html
+      output: web
+    - title: Online Authentication in Detail
       url: /develop_nhs_impl.html
       output: web
     - title: Offline Authentication in Detail
@@ -94,23 +122,14 @@ entries:
     output: web
     folderitems:
     - title: Introduction 
-      url: /index.html
+      url: /Env_Intro.html
       output: web 
-    - title: Legacy Smart Card Authentication - 1
-      url: /develop_legacyAuthentication_impl.html
-      output: web
-    - title: One Time Password
-      url: /develop_OTPIntro_impl.html
-      output: web
-    - title: Push Notification
-      url: /develop_PushNotification_impl.html
-      output: web 
-     
+   
   - title: Glossary of Terms
     output: web
     folderitems: 
     - title: Introduction
-      url: /index.html
+      url: /GlossaryTerms.html
       output: web
       
   - title:  Other useful resources
@@ -125,3 +144,10 @@ entries:
     - title: FAQ
       url: /index.html
       output: web
+
+  - title:  Site Map
+    output: web
+    folderitems:
+    - title: Site Map
+      url: /SiteMap.html
+      output: web 

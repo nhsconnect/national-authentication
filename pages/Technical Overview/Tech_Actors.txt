@@ -1,0 +1,28 @@
+---
+title: Actors 
+keywords: homepage
+sidebar: overview_sidebar
+permalink: Tech_KeyTerms.html
+toc: true
+summary: A brief introduction to Technical Overview of Care Access Service (CAS).
+---
+
+"" Introduction
+
+This section will define the actors used during the Authentication and Authorisation Service.  These will bne used throughout this section and in teh detailed NHS implmentation Guide.
+
+"" Actor List
+
+
+![Actor List ](images/Actor list-Jekyll.jpg)
+
+"" Actor Responsibility summary
+
+| Actor | Description |
+| ------ | ------ |
+| Dropbox | [plugins/dropbox/README.md] [PlDb] |
+| Github | [plugins/github/README.md] [PlGh] |
+| Google Drive | [plugins/googledrive/README.md] [PlGd] |
+| OneDrive | [plugins/onedrive/README.md] [PlOd] |
+| Medium | [plugins/medium/README.md] [PlMe] |
+| Google Analytics | [plugins/googleanalytics/README.md] [PlGa] |
