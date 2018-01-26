@@ -86,10 +86,10 @@ entries:
       url: /Tech_Actors.html
       output: web
     - title: Authentication - Open ID Connect
-      url: /explore_intro_to_oidc.html
+      url: /TechOverview_oidc.html
       output: web
     - title: Authorisation - OAuth 2.0 
-      url: /explore_auth_code_flow.html
+      url: /TechOverview_OAuth.html
       output: web
     - title: Smart on FHIR
       url: /TechOverview_SmartOnFHIR.html
@@ -104,18 +104,16 @@ entries:
     - title: Introduction
       url: /ImpGuide_Intro.html
       output: web
+    - title: Registration
+      url: /ImpGuide_Reg.html
+      output: web
     - title: Implementing Authentication
       url: /ImpGuide_OIDC.html
       output: web
     - title: Implementing Authorisation
       url: /ImpGuide_OAuth.html
       output: web
-    - title: Online Authentication in Detail
-      url: /develop_nhs_impl.html
-      output: web
-    - title: Offline Authentication in Detail
-      url: /develop_nhs_offline_impl.html
-      output: web
+    
      
      
   - title: Environment 
@@ -151,3 +149,29 @@ entries:
     - title: Site Map
       url: /SiteMap.html
       output: web 
+      
+  - title: Old Material/Jekyll
+    output: web
+    folderitems:
+    - title: Introduction - Getting Started 
+      url: /index.html
+      output: web, pdf
+      type: homepage
+    - title: Overview - OpenID Connect
+      url: /explore_intro_to_oidc.html
+      output: web
+    - title: Authorization Code Flow in Detail
+      url: /explore_auth_code_flow.html
+      output: web
+    - title: Other Features
+      url: /explore_other_features.html
+      output: web
+    - title: Overview NHS Dig Impl
+      url: /develop_intro_to_nhs_impl.html
+      output: web
+    - title: Online Authentication in Detail
+      url: /develop_nhs_impl.html
+      output: web
+    - title: Offline Authentication in Detail
+      url: /develop_nhs_offline_impl.html
+      output: web

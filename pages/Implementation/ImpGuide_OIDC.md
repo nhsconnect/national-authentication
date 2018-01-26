@@ -1,5 +1,5 @@
 ---
-title: Implementing Authentication -  OpenIF Connect
+title: Implementing Authentication -  OpenID Connect
 keywords: explore, design, reference
 sidebar: overview_sidebar
 permalink: ImpGuide_OIDC.html
@@ -10,101 +10,30 @@ summary: A detailed description of the NHS Digital implementation of Authenticat
 
 This section provides more detailed information on the use of the NHS Digital implementation of OpenID Connect whilst the user's laptop is connected to N3.
 
-## Registration
 
-Before using the NHS Digital implementation of OpenID Connect a third party will need to register their details. This is a manual step as [Dynamic Registration](explore_other_features#dynamic_registration) is not supported. During this step the following values will be agreed:
+![Authorisation Code Flow](images/Authorise.jpg)
 
-|Value|Description|
-|-----|-----------|
-|client_id|An identifier for the third party application which will be allocated by NHS Digital e.g. abc123.|
-|client_name|A name for the third party application.|
-|redirect_uris|The URI(s) to which the third party application may request authorization codes to be redirected. As noted above these will be custom URIs e.g. clientapp://connect/authresponse|
-|jwks_uri|The URI which the third party will us as a JWKS endpoint ([see Key Management](explore_other_features#key_management)) e.g. https://client.example.org/.well-known/jwks.json.|
 
-## Discovery
 
-The NHS Digital implementation does not support [Discovery](explore_other_features#discovery) but it does expose a URI where the configuration data for the OpenID Provider can be retrieved e.g.
+## ID Token Request
+Description|
 
-```
-https://connect.iam.spine2.ncrs.nhs.uk/.well-known/openid-configuration
-```
+JSON Example
 
-Submitting a HTTP GET request to this URI will return the following JSON document:
+Code example
 
-```
-{
-  "token_endpoint": "https://connect.iam.spine2.ncrs.nhs.uk/token",
-  "scopes_supported": ["openid"],
-  "id_token_signing_alg_values_supported": ["RS256"],
-  "subject_types_supported": ["public"],
-  "token_endpoint_auth_methods_supported": ["private_key_jwt"],
-  "grant_types_supported": ["authorization_code"],
-  "response_types_supported": ["code"],
-  "issuer": "https://connect.iam.spine2.ncrs.nhs.uk/token",
-  "authorization_endpoint": "nhsidentityagent://connect/authorize",
-  "claims_supported": ["sub", "iss", "name", "org", "role", "workgroups", "activities"],
-  "request_uri_parameter_supported": false,
-  "token_endpoint_auth_signing_alg_values_supported": ["RS256"],
-  "jwks_uri": "https://connect.iam.spine2.ncrs.nhs.uk/.well-known/jwks.json"
-}
-```
 
-Things to note are:
+## ID Token (containing claims)
+## ID Token Response
 
-1. The authorization endpoint utilises a Custom URI Scheme.
-2. Token and JWKS endpoints are provided but the solution does not support a userinfo endpoint.
-3. The only scope supported is the openid scope. The profile, email, address and phone scopes are not supported.
-4. Only the Authorization Code Flow is supported.
-5. Tokens will be signed using RSA utilising the SHA-256 hashing algorithm.
+## Validate ID token  (validate that it contained the relevant parameter + non repudiation)
 
-**Note:** the values given above may vary depending on the environment being used. 
 
-## Key Management
 
-### NHS Digital Keys
 
-The NHS Digital solution provids a JWKS endpoint ([see Key Management](explore_other_features#key_management)). The value taken from the JSON document above is:
 
-```
-https://connect.iam.spine2.ncrs.nhs.uk/.well-known/jwks.json
-```
 
-Submitting a HTTP GET request to this URI will return the following JSON document:
 
-```
-{
-  "keys":[
-    {"kid":"rF-Do8xhajL-bfrC0Ef0DpqvwbJ9UUzUbEFQwl42rw4",
-     "e":"AQAB",
-     "kty":"RSA",
-     "n":"vsqnkkTNOlMC9boScmBCFXQ2BpQwdOGd3ET55PY4wBzZ217opPqiP43_yZBgWfG3Mb1r3PaDNCtAZSbsWH_iIvLZnllnvzYY
-         _iOW7zrqaWSD4Dfaaa2Eg4dOBI71n4A38FRsa2N1nbWKCdX_ffZwqxZwX0dg44ELvwO5rTwJLoIZPXy2FD_lkjrR8ksC_N9EiQ
-         -yY9bbQTIgVZuHXdklZnTTCeUczz7bAt3DVJ5JFOT1E7sBkUqOqwXLG7k-capqWYJXUNgKFig0dt8AEPPvAhXsnt4fKOQQx2Kb
-         y-YNYijpxP752P62ArGLaqcvv5hU13V2obPMQ4P9ysHBFyEurw"
-    }
-  ]
-}
-```
-
-This shows a single RSA key being returned. Periodically NHS Digital will rotate its signing key using a three step process:
-
-1. A period of time prior to using a new key it will be added to the JWK Set with a new identifier.
-2. The new key will be used to sign tokens.
-3. A period of time after the old key is no longer used it will be removed from the JWK Set.
-
-To avoid having to read the JWKS endpoint every time a signature is checked suppliers are encouraged to locally cache the JWK Set. However they should be aware of the rotation procedure described and re-query the JWKS endpoint when they receive a kid they do not recognise.
-
-**Note:** the values given above may vary depending on the environment being used. 
-
-### Third Party Keys
-
-When submitting a token request to the NHS Digtal token endpoint third party applications are required to authenticate themselves ([see Client Authentication](explore_auth_code_flow#client-authentication)). 
-
-The NHS Digital implementation requires that this is done using the private_key_jwt method using the RSA256 algorithm. To support this mechanism the third party must generate its own RSA key pairs and publish the public key via a JWKS endpoint in the same fashion as described for the NHS Digital public keys above.
-
-The URI for the third party JWKS will be recorded as part of the registration process. The URI must be accessible to NHS Digital via N3.
-
-The third party should periodically rotate their signing keys using the three step process as described above for the NHS Digital public keys. 
 
 ## Authentication Request
 
