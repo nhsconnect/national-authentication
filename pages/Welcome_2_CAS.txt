@@ -1,0 +1,44 @@
+---
+title: Authentication Request - Java Example
+keywords: homepage
+sidebar: overview_sidebar
+permalink: ImpGuide_Auth1_Req_Java.html
+toc: true
+summary: This section shows a Java Example for Authentication Request
+---
+[Return back](ImpGuide_OIDC.html)
+
+```
+
+
+// Generate random state string for pairing the response to the request
+
+State state = new State();
+
+// Generate nonce
+
+Nonce nonce = new Nonce();
+
+// Specify scope
+
+Scope scope = Scope.parse("openid");
+
+// Compose the request
+
+AuthenticationRequest authenticationRequest = new AuthenticationRequest(
+
+  providerMetadata.getAuthorizationEndpointURI(),
+  
+  new ResponseType(ResponseType.Value.CODE),
+  
+  scope, clientInformation.getID(), redirectURI, state, nonce);
+  
+  URI authReqURI = authenticationRequest.toURI();
+  
+return authReqURI;
+```
+
+
+
+
+[Return back](ImpGuide_OIDC.html)
