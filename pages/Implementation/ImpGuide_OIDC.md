@@ -21,7 +21,7 @@ This section is a guide to implemntation of Authentication and Authorisation usi
 ### Authentication Request
 
 |**Description**| The authentication request is done by redirecting the end user to the provider, for more details see the OIDC specification. The redirect URL is built as follows, using the Authorization Code Flow.| 
-|**Protocol example**| |
+|**Protocol example**|here |
 |**Coding Example**|  [Java Example](ImpGuide_AuthReq_Java.html), Python click Here |
 |**Supporting Information**| If the provider does not support the discovery protocol, replace providerMetadata.getAuthorizationEndpointURI() with the authorization endpoint URL received out-of-band.	If the provider does not support dynamic client registration, replace clientInformation.getID() with the client id received out-of-band. Make sure redirectURI matches a URI known by the provider. The state and nonce should be stored so they can be retrieved later. |
 

@@ -105,7 +105,7 @@ entries:
     - title: Introduction
       url: /ImpGuide_Intro.html
       output: web
-    - title:  Overview - Detailed Authentication Code Flow
+    - title:  Detailed Authentication Code Flow
       url: /Impguide_DetailOverview.html
       output: web
     - title: Registration
