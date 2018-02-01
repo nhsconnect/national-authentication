@@ -48,9 +48,6 @@ entries:
     - title: Introduction 
       url: /Authen_type_Intro.html
       output: web 
-    - title: Smart Card Authentication
-      url: /AuthType_SmartCardAuthentication.html
-      output: web
     - title: Legacy Smart Card Authentication
       url: /AuthType_SmartCard.html
       output: web

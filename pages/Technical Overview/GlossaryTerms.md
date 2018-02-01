@@ -6,9 +6,6 @@ permalink: GlossaryTerms.html
 toc: true
 summary: 
 ---
-![Glossary](images/glossary.jpg)
-
-|or|
 
 ![Glossay Magnifying Glas](images/GlossaryMag.jpg)
 
