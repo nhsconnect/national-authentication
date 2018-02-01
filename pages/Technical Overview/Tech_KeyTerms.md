@@ -1,16 +1,16 @@
 ---
-title: Key Terms & Conepts for CAS
+title: Key Terms and Conepts used within CAS
 keywords: homepage
 sidebar: overview_sidebar
 permalink: Tech_KeyTerms.html
 toc: true
-summary: A brief introduction to Technical Overview of Care Access Service (CAS).
+summary: A brief definition of Key Terms/Concepts for Care Access Service (CAS).
 ---
 
 
 
 
-### Key Terms
+### Key Terms/Concepts
 
 The following key terms are used in the rest of site:
 

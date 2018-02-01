@@ -48,6 +48,9 @@ entries:
     - title: Introduction 
       url: /Authen_type_Intro.html
       output: web 
+    - title: Smart Card Authentication
+      url: /AuthType_SmartCardAuthentication.html
+      output: web
     - title: Legacy Smart Card Authentication
       url: /AuthType_SmartCard.html
       output: web
@@ -83,7 +86,7 @@ entries:
     - title: Introduction 
       url: /Tech_Intro.html
       output: web 
-    - title:  Key Terms and Concepts
+    - title:  Key Concepts
       url: /Tech_KeyTerms.html
       output: web
     - title: Actor List
@@ -142,31 +145,18 @@ entries:
       url: /Env_Intro.html
       output: web 
    
-  - title: Glossary of Terms
-    output: web
-    folderitems: 
-    - title: Introduction
-      url: /GlossaryTerms.html
-      output: web
-      
+     
   - title:  Other useful resources
     output: web
     folderitems:
-    - title: Introduction 
-      url: /index.html
-      output: web 
+    - title: Glossary of Terms
+      url: /GlossaryTerms.html
+      output: web
     - title:  Useful links
-      url: /index.html
+      url: /OtherInfo_Links.html
       output: web
     - title: FAQ
-      url: /index.html
+      url: /OtherInfo_FAQ.html
       output: web
 
-  - title:  Site Map
-    output: web
-    folderitems:
-    - title: Site Map
-      url: /SiteMap.html
-      output: web 
-      
   

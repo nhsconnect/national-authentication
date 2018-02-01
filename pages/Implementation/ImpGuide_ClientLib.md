@@ -8,7 +8,7 @@ summary: Links to Client Libraries.
 ---
 
 
-![Under Construction](images/UnderConstruction.jpg)
+
 
 OpenID Connect can be utilised from many programming languages such as:
 
