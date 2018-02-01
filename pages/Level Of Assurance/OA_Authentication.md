@@ -8,3 +8,5 @@ summary: An overview of the Security Assurance Level for Authentication for Care
 ---
 
 Introduction to Security Assurance Level for Authentication
+
+![Under Construction](images/UnderConstruction.jpg)

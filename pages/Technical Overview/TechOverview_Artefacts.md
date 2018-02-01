@@ -7,9 +7,20 @@ toc: true
 summary: An overview of the key Artefact used for Authentication and Authorisation.
 ---
 
+![Under Construction](images/UnderConstruction.jpg) **"Content of the Access Token for NHS Digital yet to be finalaised"**
+
 ## Data Artefacts
 
 This section describes in more detail some of the data artefacts used in the Open ID and OAuth 2.0 flows.  This is represented in the diagram below:
+
+### Overview of the ID and Access Token
+
+The two tokens produced for the Care Access Service are summarised below
+
+![ID Access Token](images/IDAccessTokenv1.JPG)
+
+
+The diagram below shows the content of the ID and Access Token
 
 ![ Key Artefacts ](images/Tokens-Artefacts.jpg)
 
@@ -26,12 +37,17 @@ As a minimum the ID token will contain the following claims:
 |aud|Audience(s)|The identifier of the Relying Party and any other parties intended as a recipient.|
 |exp|Expiration|The time on or after which the ID Token must not be accepted for processing.|
 |iat|Issuance Time|The time at which the JWT was issued.|
+|auth_time|Authenication Time|Time when the End-User authentication occured|
+|nonce|...|String value used to associate a Client session with an ID Token, and to mitigate replay attacks. |
+|acr|Authentication Context Class reference| Shows the level of assurance|
+|amr|Authentication Method Reference|This shows the authentication methods used in the authentication, eg One Time Password, Push Notification, Certificates etc|
+|azp|Authorised party|The party to which the ID token was issued. If present, it MUST contain the OAuth 2.0 Client ID of this party. This Claim is only needed when the ID Token has a single audience value and that audience is different than the authorized party. It MAY be included even when the authorized party is the same as the sole audience. The azp value is a case sensitive string containing a StringOrURI value. |
 
 The **ID Token** may additionally contain other claims:
 
 > 1. OpenID Connect defines a number of optional claims that may be returned depending on the flow being used and the parameters provided in the initial request. For example a Relying Party may supply a nonce parameter in the original request and this will be returned unmodified in a nonce claim to allow the Relying Party to mitigate against a replay attack.
 >
-> 2. Additionally an OpenID Provider implementation may optionally decide to return additional user information in the ID Token e.g. a name claim containing the End-User's full name.
+> 2. Additionally an OpenID Provider implementation may optionally decide to return additional user information in the ID Token e.g. a name claim containing the End-User's full name or a SpineRoles claim containing  a users clinical spine access.
 
 For more details see the [OpenID Connect Core Specification](http://openid.net/specs/openid-connect-core-1_0.html#IDToken).
 
@@ -50,6 +66,7 @@ The claims are represented in a simple JSON object e.g.
  "iat": 1311280970,
  "auth_time": 1311280969,
  "acr": "urn:mace:incommon:iap:silver"
+ "amr": ["mfa", "pwd","otp"]
 }
 ```
 The JSON object is signed using a JSON Web Signature [JWS](https://tools.ietf.org/html/rfc7515) and optionally may be encrypted using JSON Web Encryption [JWE](https://tools.ietf.org/html/rfc7516). Signing the token allows the integrity and origin of the token to be validated by the Relying Party whilst encrypting the token provides confidentiality.
@@ -72,6 +89,14 @@ XUVrWOLrLl0nx7RkKU8NXNHq-rvKMzqg"
 
 
 ### Access Token
+
+
+The Access Token will contain the following information:
+
+|Claim|Name|Description|
+|-----|----|-----------|
+|iss|Issuer Identifier|An identifier for OpenID Provider.|
+|sub|Subject Identifier|A unique identifier for the End-User.|
 
 An access tokens is a credential used to access protected resources. It represents specific scopes and durations of access, granted by the resource owner, and enforced by the resource server and authorization.
 

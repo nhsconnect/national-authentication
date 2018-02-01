@@ -12,6 +12,8 @@ summary: This section provide a guide on registering a user
 
 (this section is still under discussion – nick sykes)
 
+![Under Construction](images/UnderConstruction.jpg)
+
 Before using the NHS Digital implementation of OpenID Connect a third party will need to register their details. This is a manual step as Dynamic Registration is not supported
 Before being able to interact with an OpenID Provider a Relying Party must first register with the provider. During this process the following items will be exchanged:
 

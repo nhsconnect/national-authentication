@@ -8,3 +8,5 @@ summary: An overview of Smart on FHIR.
 ---
 
 This section will provide an overview of SMART on FHIR - Adam Hatherly to define
+
+![Under Construction](images/UnderConstruction.jpg)

@@ -26,7 +26,7 @@ This is authorising the user to access a resource using OAuth 2.0
 
 ## Technical Concepts
 
-This rest of sections will provide an overview of:
+The rest of these sections will provide an overview of:
 
 1 – Open ID Connect:  used for Authentication
 

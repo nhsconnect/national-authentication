@@ -12,17 +12,20 @@ entries:
       url: /index.html
       output: web  
       type: homepage
-    - title: Authentication
+    - title: The Vision
+      url: /Intro_Vision.html
+      output: web
+    - title: Authentication Service
       url: /Intro_Authentication.html
       output: web      
-    - title: Authorisation
+    - title: Authorisation Service
       url: /Intro_Authorisation.html
       output: web
      
-    - title: API Gateway
+    - title: API Gateway Service
       url: /Intro_APIGateway.html
       output: web
-    - title: Federation
+    - title: Federation Service
       url: /Intro_Federation.html
       output: web
    
@@ -99,11 +102,14 @@ entries:
       url: /TechOverview_Artefacts.html
       output: web
            
-  - title: NHS Implementation Guidelines
+  - title: Implementation Guidelines
     output: web
     folderitems:
     - title: Introduction
       url: /ImpGuide_Intro.html
+      output: web
+    - title: Client Libraries
+      url: /ImpGuide_ClientLib.html
       output: web
     - title:  Detailed Authentication Code Flow
       url: /Impguide_DetailOverview.html
@@ -117,6 +123,15 @@ entries:
     - title: Implementing Authorisation
       url: /ImpGuide_OAuth.html
       output: web
+    - title:  ASP.net Example
+      url: /ImpGuide_ASPExample.html
+      output: web
+    - title:  Java Example
+      url: /ImpGuide_Java_Example.html
+      output: web
+    - title:  Python Example
+      url: /ImpGuide_PythonExample.html
+      output: web   
     
      
      
@@ -154,28 +169,4 @@ entries:
       url: /SiteMap.html
       output: web 
       
-  - title: Old Material/Jekyll
-    output: web
-    folderitems:
-    - title: Introduction - Getting Started 
-      url: /index.html
-      output: web, pdf
-      type: homepage
-    - title: Overview - OpenID Connect
-      url: /explore_intro_to_oidc.html
-      output: web
-    - title: Authorization Code Flow in Detail
-      url: /explore_auth_code_flow.html
-      output: web
-    - title: Other Features
-      url: /explore_other_features.html
-      output: web
-    - title: Overview NHS Dig Impl
-      url: /develop_intro_to_nhs_impl.html
-      output: web
-    - title: Online Authentication in Detail
-      url: /develop_nhs_impl.html
-      output: web
-    - title: Offline Authentication in Detail
-      url: /develop_nhs_offline_impl.html
-      output: web
+  

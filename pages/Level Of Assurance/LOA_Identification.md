@@ -8,3 +8,5 @@ summary: An overview of the Security Assurance Level for Identification for Care
 ---
 
 Introduction to Security Assurance Level for Identification
+
+![Under Construction](images/UnderConstruction.jpg)
