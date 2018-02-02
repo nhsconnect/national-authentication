@@ -7,7 +7,10 @@ toc: true
 summary: A brief introduction to the Authentication Service within Care Access Service.
 ---
 
-Authentication is the process that ensures and confirms a subjects identity to a particular assurance level. 
+![Authentication image](images/Authentication.jpg)
+
+
+** Authentication is the process that ensures and confirms a subjects identity to a particular assurance level.**
 
 The higher the assurance level the more confident a client system can be that the subject is who they say they are. 
 

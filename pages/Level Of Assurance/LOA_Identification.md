@@ -7,6 +7,8 @@ toc: true
 summary: An overview of the Security Assurance Level for Identification for Care Access Service (CAS).
 ---
 
-Introduction to Security Assurance Level for Identification
+Introduction to Security Assurance Level for Identification.
+
+The level of Assurance is going through the governance process.
 
 ![Under Construction](images/UnderConstruction.jpg)
