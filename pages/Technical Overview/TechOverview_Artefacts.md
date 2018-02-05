@@ -7,41 +7,52 @@ toc: true
 summary: An overview of the key Artefact used for Authentication and Authorisation.
 ---
 
-![Under Construction](images/UnderConstruction.jpg) **"Content of the Access Token for NHS Digital yet to be finalaised"**
+{% include important.html content="*NEEDS SIGNIFICANT RE-WRITING AND SIMPLIFYING BASED ON Token TA discussion*" %}
+
 
 ## Data Artefacts
 
-This section describes in more detail some of the data artefacts used in the Open ID and OAuth 2.0 flows.  This is represented in the diagram below:
-
-### Overview of the ID and Access Token
+This section describes in more detail some of the data artefacts used in the Open ID and OAuth 2.0 flows.  
 
 The two tokens produced for the Care Access Service are summarised below
 
 ![ID Access Token](images/IDAccessTokenv1.JPG)
 
+|Token| Description|
+|---|---|
+|ID Token| A JSON Web Token (JWT that contains claims about the authentication event and may contain claims about the End-User. An ID Token is requested using the openid scope. |
+|Access Token| An access tokens is a credential used to access protected resources. It represents specific scopes and durations of access, granted by the resource owner, and enforced by the resource server and authorization.  OAuth 2.0 supports a number of access token types, the type used by OpenID Connect are bearer tokens which can be simply understood as meaning "give access to the bearer of this token". Access tokens can have different formats, structures, and methods of utilization based on the resource server security requirements. However they are represented as a string the structure of which is usually opaque to the client.|
 
-The diagram below shows the content of the ID and Access Token
-
-![ Key Artefacts ](images/Tokens-Artefacts.jpg)
 
 
 
-### ID Token
+
+
+## ID Token
+
+The diagram below shows the content of an ID Token
+
+![ Key Artefacts ](images/IDTokenContent.JPG)
 
 As a minimum the ID token will contain the following claims:
 
-|Claim|Name|Description|
-|-----|----|-----------|
-|iss|Issuer Identifier|An identifier for OpenID Provider.|
-|sub|Subject Identifier|A unique identifier for the End-User.|
-|aud|Audience(s)|The identifier of the Relying Party and any other parties intended as a recipient.|
-|exp|Expiration|The time on or after which the ID Token must not be accepted for processing.|
-|iat|Issuance Time|The time at which the JWT was issued.|
-|auth_time|Authenication Time|Time when the End-User authentication occured|
-|nonce|...|String value used to associate a Client session with an ID Token, and to mitigate replay attacks. |
-|acr|Authentication Context Class reference| Shows the level of assurance|
-|amr|Authentication Method Reference|This shows the authentication methods used in the authentication, eg One Time Password, Push Notification, Certificates etc|
-|azp|Authorised party|The party to which the ID token was issued. If present, it MUST contain the OAuth 2.0 Client ID of this party. This Claim is only needed when the ID Token has a single audience value and that audience is different than the authorized party. It MAY be included even when the authorized party is the same as the sole audience. The azp value is a case sensitive string containing a StringOrURI value. |
+|Claim|Name|Cardinality| Description|
+|-----|----|-----------|----|
+|iss|Issuer Identifier| Mandatory|An identifier for OpenID Provider.|
+|sub|Subject Identifier| Mandatory|A unique identifier for the End-User.|
+|aud|Audience(s)| Mandatory|The identifier of the Relying Party and any other parties intended as a recipient.|
+|exp|Expiration|Mandatory |The time on or after which the ID Token must not be accepted for processing.|
+|iat|Issuance Time| Mandatory|The time at which the JWT was issued.|
+|auth_time|Authenication Time| Optional|Time when the End-User authentication occured|
+|nonce|...|Optional |String value used to associate a Client session with an ID Token, and to mitigate replay attacks. |
+|acr|Authentication Context Class reference|Optional |Shows the level of assurance|
+|amr|Authentication Method Reference|Optional |This shows the authentication methods used in the authentication, eg One Time Password, Push Notification, Certificates etc|
+|azp|Authorised party|Optional |The party to which the ID token was issued. If present, it MUST contain the OAuth 2.0 Client ID of this party. This Claim is only needed when the ID Token has a single audience value and that audience is different than the authorized party. It MAY be included even when the authorized party is the same as the sole audience. The azp value is a case sensitive string containing a StringOrURI value. |
+
+
+
+
+ 
 
 The **ID Token** may additionally contain other claims:
 
@@ -56,6 +67,8 @@ The id token is a JSON Web Token ([JWT](https://tools.ietf.org/html/rfc7519)) th
 
 The claims are represented in a simple JSON object e.g.
 
+### ID Token Payload Example 
+
 ```
 {
  "iss": "https://server.example.com",
@@ -69,6 +82,10 @@ The claims are represented in a simple JSON object e.g.
  "amr": ["mfa", "pwd","otp"]
 }
 ```
+
+
+### ID Token Example (JWT)
+
 The JSON object is signed using a JSON Web Signature [JWS](https://tools.ietf.org/html/rfc7515) and optionally may be encrypted using JSON Web Encryption [JWE](https://tools.ietf.org/html/rfc7516). Signing the token allows the integrity and origin of the token to be validated by the Relying Party whilst encrypting the token provides confidentiality.
 
 Finally the id token header, JSON claims and signature are encoded into a Base64URL strings separated by a . character e.g.
@@ -86,27 +103,70 @@ K5hoDalrcvRYLSrQAZZKflyuVCyixEoV9GfNQC3_osjzw2PAithfubEEBLuVVk4
 XUVrWOLrLl0nx7RkKU8NXNHq-rvKMzqg"
 ```
 
+---
 
 
-### Access Token
+
+## Access Token 
+
+The diagram below shows the content of an Access Token
+
+![ Key Artefacts ](images/AccessTokenContent.JPG)
+
+As a minimum the Access token will contain the following claims:
 
 
-The Access Token will contain the following information:
 
-|Claim|Name|Description|
-|-----|----|-----------|
-|iss|Issuer Identifier|An identifier for OpenID Provider.|
-|sub|Subject Identifier|A unique identifier for the End-User.|
 
-An access tokens is a credential used to access protected resources. It represents specific scopes and durations of access, granted by the resource owner, and enforced by the resource server and authorization.
+|Claim|Name|Cardinality |Description|
+|----|-----|-----|----|
+|iss|Issuer Identifier|Mandatory |Requesting systems issuer URI. For tokens issued by the national authentication solution, this will be the URL of that national service. For tokens issued by a different issuer, this will hold the URL for the issuer. |
+|sub|Subject Identifier|Mandatory|A unique identifier for the End-User.  An identifier for the person or system that has been authorised for access. In most cases this will be an identifier for a member of staff, identified by a Spine URP ID (see RBAC) for details|
+|aud|Audience(s)|Mandatory|The identifier of the Relying Party and any other parties intended as a recipient, e.g. API endpoint URL. The URI for the API Endpoint. This will be the fully qualified endpoint address returned to the Consumer by the SDS endpoint lookup service as the value of nhsMhsEndPoint. |
+|exp|Expiration|Mandatory|The time on or after which the Access Token must not be accepted for processing.|
+|iat|Issuance Time|Mandatory|The time at which the JWT was issued.|
+|reason_for_request| | | Purpose for which access is being requested. This is currently limited to one of the following values: **directcare, secondaryuses or patientaccess**.|
+|requested_scope| | | Data being requested:  This is a space-separated list of the scopes authorised for this user. Individual APIs will check this list to establish whether the authorisation grants access to the data being request by the client, and will reject the call if the appropriate scopes have not been granted in the token.  |
+|requesting_system | | | Identifier for the system or device making the request.  This is an identifier for the deployed client system that has been authorised to make API calls. In the case of Spine-enabled clients (or those using the SSP to broker API calls), this will be a Spine Accredited System ID (ASID). The naming system prefix for the ASID will be https://fhir.nhs.uk/Id/accredited-system |
+|requesting_organization | |Optional| Organisation making the request.  This is the ODS code of the care organisation from where the request originates.The naming system prefix for the ODS code will be https://fhir.nhs.uk/Id/ods-organization-code|
+|requesting_user | |Optional|Health or Social Care professional making the request |
 
-OAuth 2.0 supports a number of access token types, the type used by OpenID Connect are bearer tokens which can be simply understood as meaning "give access to the bearer of this token". 
 
-Access tokens can have different formats, structures, and methods of utilization based on the resource server security requirements. However they are represented as a string the structure of which is usually opaque to the client. An example of a returned access token is given below:
 
+### Access Token Payload Example ###
+
+```json
+{
+	"iss": "https://cas.nhs.uk",
+	"sub": "https://fhir.nhs.uk/Id/sds-role-profile-id"|[SDSRoleProfileID]",
+	"aud": "https://provider.thirdparty.nhs.uk/GP0001/STU3/1",
+	"exp": 1469436987,
+	"iat": 1469436687,
+	"reason_for_request": "directcare",
+	"requested_scope": "patient/*.read",
+	"requesting_system": "https://fhir.nhs.uk/Id/accredited-system|[ASID]",
+	"requesting_organization": "https://fhir.nhs.uk/Id/ods-organization-code|[ODSCode]",
+	"requesting_user": "https://fhir.nhs.uk/Id/sds-role-profile-id"|[SDSRoleProfileID]"
+}
 ```
-access_token=jHkWEdUXMU1BwAsC4vtUsZwnNvTIxEl0z9K3vx5KF0Y
+
+
+
+### Access Token Example (JWT)
+
+The final output is three Base64url encoded strings separated by dots (note - there is some canonicalisation done to the JSON before it is Base64url encoded, which the JWT code libraries will do for you).
+
+```shell
+eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJpc3MiOiJodHRwOi8vZWMyLTU0LTE5NC0xMDktMTg0LmV1LXdlc3QtMS5jb21wdXRlLmFtYXpvbmF3cy5jb20vIy9zZWFyY2giLCJzdWIiOiIxIiwiYXVkIjoiaHR0cHM6Ly9hdXRob3JpemUuZmhpci5uaHMubmV0L3Rva2VuIiwiZXhwIjoxNDgxMjUyMjc1LCJpYXQiOjE0ODA5NTIyNzUsInJlYXNvbl9mb3JfcmVxdWVzdCI6ImRpcmVjdGNhcmUiLCJyZXF1ZXN0ZWRfcmVjb3JkIjp7InJlc291cmNlVHlwZSI6IlBhdGllbnQiLCJpZGVudGlmaWVyIjpbeyJzeXN0ZW0iOiJodHRwOi8vZmhpci5uaHMubmV0L0lkL25ocy1udW1iZXIiLCJ2YWx1ZSI6IjkwMDAwMDAwMzMifV19LCJyZXF1ZXN0ZWRfc2NvcGUiOiJwYXRpZW50LyoucmVhZCIsInJlcXVlc3RpbmdfZGV2aWNlIjp7InJlc291cmNlVHlwZSI6IkRldmljZSIsImlkIjoiMSIsImlkZW50aWZpZXIiOlt7InN5c3RlbSI6IldlYiBJbnRlcmZhY2UiLCJ2YWx1ZSI6IkdQIENvbm5lY3QgRGVtb25zdHJhdG9yIn1dLCJtb2RlbCI6IkRlbW9uc3RyYXRvciIsInZlcnNpb24iOiIxLjAifSwicmVxdWVzdGluZ19vcmdhbml6YXRpb24iOnsicmVzb3VyY2VUeXBlIjoiT3JnYW5pemF0aW9uIiwiaWQiOiIxIiwiaWRlbnRpZmllciI6W3sic3lzdGVtIjoiaHR0cDovL2ZoaXIubmhzLm5ldC9JZC9vZHMtb3JnYW5pemF0aW9uLWNvZGUiLCJ2YWx1ZSI6IltPRFNDb2RlXSJ9XSwibmFtZSI6IkdQIENvbm5lY3QgRGVtb25zdHJhdG9yIn0sInJlcXVlc3RpbmdfcHJhY3RpdGlvbmVyIjp7InJlc291cmNlVHlwZSI6IlByYWN0aXRpb25lciIsImlkIjoiMSIsImlkZW50aWZpZXIiOlt7InN5c3RlbSI6Imh0dHA6Ly9maGlyLm5ocy5uZXQvc2RzLXVzZXItaWQiLCJ2YWx1ZSI6IkcxMzU3OTEzNSJ9LHsic3lzdGVtIjoibG9jYWxTeXN0ZW0iLCJ2YWx1ZSI6IjEifV0sIm5hbWUiOnsiZmFtaWx5IjpbIkRlbW9uc3RyYXRvciJdLCJnaXZlbiI6WyJHUENvbm5lY3QiXSwicHJlZml4IjpbIk1yIl19fX0.
 ```
+
+
+
+
+
+
+
+
 
 ### Refresh Token
 
