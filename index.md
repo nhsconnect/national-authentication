@@ -10,7 +10,7 @@ summary: A brief introduction to Care Access Service (CAS).
 
 The diagram below shows an overview of the Care Access Service.
 
-![CAS Overview Diagram](images/CAS_Overview_WhtBG.JPG)
+![CAS Overview Diagram](./images/CAS_Overview_WhtBG.JPG)
 
 Digital identity is the online persona of a subject. In terms of the NHS Digital Care Access Service this will be the national identity for health and social care workers. 
 
