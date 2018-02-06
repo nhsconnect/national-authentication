@@ -10,11 +10,11 @@ new  Care Access Service provides a number of authentication options that can be
 
 This section will explore the different Authentication Types used within NHS Care Access Service:
 
-* ** Legacy Smart Card Authentication **
-* OpenID connect Smart Card Authentication
-* One time Password (OATH)
-* HMAC Once Time Password (HOTP)
-* Push Notification
-* Knowledge Based Authentication
-* Certificates (X509)
-* Device Based
+> * [Legacy Smart Card Authentication](AuthType_SmartCard.html)
+> * [OpenID connect Smart Card Authentication](AuthType_OpenIDC_SC.html)
+> * One time Password (OATH)
+> * HMAC Once Time Password (HOTP)
+> * Push Notification
+> * Knowledge Based Authentication
+> * Certificates (X509)
+> * Device Based

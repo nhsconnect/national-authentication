@@ -18,7 +18,7 @@ Four steps are involved in getting going from scratch:
 > 2.	Create your basic ASP.NET Core application as a starting point
 > 3.	Modify your application to defer authentication to the CAS Service.
 	
-## Create your basic ASP.NET Core web application
+### Create your basic ASP.NET Core web application
 To create you new web site just create a new project in VS 2017 and choose the ASP.NET Core Web Application
 
 ![ASnet Appl](images/ASPEx1.jpg)
@@ -48,7 +48,7 @@ using System.IdentityModel.Tokens.Jwt;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 ```
 
-In the Configuration method add these lines after the app.UseStaticFiles(); line. .
+In the `Configuration` method add these lines after the `app.UseStaticFiles();` line. .
 
 ```sh
 app.UseCookieAuthentication(new CookieAuthenticationOptions {
@@ -85,9 +85,9 @@ The `options` object sets the OpenID Connect middelware behaviour.
 Specifically the `AuthorizationScheme` property determines the callback you must register with your OpenID Connect identity provider (see the section at the end on how to do that for easyID). In this case we set it to `oidc` which means the callback will be on/`signin-oidc`. Still, this is handled by the middelware so no need for any additional code.
 We are now ready to authenticate. Before trying it out we just need a protected resource that will display user information.
 
-## The protected view: Start the login and show the user info
+### The protected view: Start the login and show the user info
 
-First add a login link to the front page. Put a login link in the menu, or something to the same effect, in the _Layout.cshtml shared view where the top menu is rendered:
+First add a login link to the front page. Put a login link in the menu, or something to the same effect, in the `_Layout.cshtml` shared view where the top menu is rendered:
 
 
 ```sh
@@ -102,7 +102,7 @@ else
 
 ```
 
-To implement the Protected view which will kick off the authentication process, add a new action to the HomeController. Notice the Authorize attribute which will start the OIDC flow.
+To implement the `Protected` view which will kick off the authentication process, add a new action to the `HomeController`. Notice the `Authorize` attribute which will start the OIDC flow.
 
 ```sh
 // The Authorize attribute requires the user to be authenticated and will
@@ -121,7 +121,7 @@ public async Task<IActionResult> Logout()
 
 ```
 
-Now, adding a simple view, Protected.cshtml, in the Views/Home to display the claims, and we are set.
+Now, adding a simple view, `Protected.cshtml`, in the `Views/Home` to display the claims, and we are set.
 
 ```sh
 @{

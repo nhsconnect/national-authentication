@@ -60,12 +60,12 @@ The **ID Token** may additionally contain other claims:
 >
 > 2. Additionally an OpenID Provider implementation may optionally decide to return additional user information in the ID Token e.g. a name claim containing the End-User's full name or a SpineRoles claim containing  a users clinical spine access.
 
-For more details see the [OpenID Connect Core Specification](http://openid.net/specs/openid-connect-core-1_0.html#IDToken).
+For more details see the [OpenID Connect Core Specification](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaims) for a standard set of claims.
 
 
-The id token is a JSON Web Token ([JWT](https://tools.ietf.org/html/rfc7519)) that contains claims about the **Authentication** of an End-User and their **Identity**. It may optionally contain other data about the End-User.
+The `ID Token` is a JSON Web Token ([JWT](https://tools.ietf.org/html/rfc7519)) that contains claims about the **Authentication** of an End-User and their **Identity**. It may optionally contain other data about the End-User.
 
-The claims are represented in a simple JSON object e.g.
+The claims are represented in a simple JSON object as shown in the example below.
 
 ### ID Token Payload Example 
 

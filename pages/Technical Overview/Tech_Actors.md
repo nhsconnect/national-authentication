@@ -9,12 +9,17 @@ summary: A brief introduction to Technical Overview of Care Access Service (CAS)
 
 ## Introduction
 
+---
+
 This section will define the actors used during the Authentication and Authorisation Service.  These will bne used throughout this section and in teh detailed NHS implmentation Guide.
 
 ## Actor List
 
 
 ![Actor List ](images/Actor list-Jekyll.jpg)
+
+
+
 
 ## Actor Responsibility Summary
 
@@ -26,5 +31,5 @@ This section will define the actors used during the Authentication and Authorisa
 | Resource Owner | An entity capable of granting access to a protected resource.When the resource owner is a person, it is referred to as an end-user. |
 | Resource Server | The server hosting the protected resources, capable of accepting and responding to protected resource requests using access tokens. |
 | End-User| The human participant being authenticated and about whom the Relying Party is requesting information.|
-| UserInfo Endpoint |  |
-| Token Endpoint |  |
+| UserInfo Endpoint | An OAuth 2.0 Protected Resource that returns Claims about the authenticated End-User. |
+| Token Endpoint | The endpoint where a relying party(client) obtains an Access Token, ID Token and optionally a refresh token from. |

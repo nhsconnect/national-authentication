@@ -22,7 +22,7 @@ The prerequisite for executing the Authorisation operations are:
 
 ## Authorisation Request (Access Token Request)
 ### Description
-When an authorization code (using code or hybrid flow) has been obtained, a token request can be made to get the access token
+When an `authorisation code` (using code or hybrid flow) has been obtained, a `token` request can be made to get the `access token`.
 ### Protocol Example
 The diagram below shows the content of the authorisation request type
 ![Authorisation Request](images/AuthorisationRequestTypev1.JPG)
@@ -86,6 +86,12 @@ On successful execution of the above request the outcome will be an [access toke
 ### Description
 Using the access token, information about the end user can be obtained by making a user info request:
 ### Protocol Example
+
+The diagram below shows the sample content of the userInfo request
+
+![User Information Claim Additional Information ](images/UserInfoRequest.JPG)
+
+Additional claims can be requested such as `date of birth`, `address`, `gemder` and many more. For claim attributes can be viewed on the [OPENID Connect specification](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaims)
 Any information about the user can be requested as specified in Open ID Connect Specification
 
 ### Python Coding Example

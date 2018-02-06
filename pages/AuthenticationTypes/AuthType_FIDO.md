@@ -6,7 +6,7 @@ permalink: AuthType_FIDO.html
 toc: true
 summary: A brief introduction to getting started with NHS Digital's Care Access Service.
 ---
-![Fido alliance Link](images/FIDOAlliance.jpg)
+|![Fido alliance Link](images/FIDOAlliance.jpg)| ![Fidou2F](images/Fido.JPG)|
 
 FIDO stands for Fast Identity Online. It is an authentication method designed to leverage and trust the local in-built capabilities of devices to validate who the user is e.g. fingerprint readers, facial recognition etc..FIDO is managed and promoted by a group known as the FIDO Alliance who are sponsored by industry giants such as Microsoft and Google amongst others.
 

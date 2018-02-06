@@ -7,6 +7,8 @@ toc: true
 summary: A brief introduction of the Authorisation Service within NHS Digital's Care Access Service.
 ---
 
+![Authorisation image](images/IntroAuthorisationService.JPG)
+
 Authorisation is the process which determines whether a digital identity has sufficient privileges to access resources protected by that service. 
 
 The Authorisation service can protect web pages, web services and API’s. 
@@ -19,8 +21,8 @@ The CAS authorisation service primary purpose will be to protect national servic
 
 The capabilities of the CAS authorisation service are as follows:
 
-* Abstracts access rules into a centralised policy engine which can be amended by configuration
-* Provides standards based access control with built-in consent (OAuth 2.0)
-* Provides short lived Access tokens & Refresh Tokens to enable efficient and secure access to resources
-* Provides policy agents which intercept and redirect traffic for authentication and authorization
+> * Abstracts access rules into a centralised policy engine which can be amended by configuration
+> * Provides standards based access control with built-in consent (OAuth 2.0)
+> * Provides short lived Access tokens & Refresh Tokens to enable efficient and secure access to resources
+> * Provides policy agents which intercept and redirect traffic for authentication and authorization
 

@@ -26,6 +26,13 @@ The authentication request is done by redirecting the end user to the provider, 
 
 ### Protocol Example
 
+The diagram below shows the content of the `Authentication Request`:
+
+![Authentication Request Type](images/AuthenticationRequestType.JPG)
+
+There are more parameters defined by the [OpenId Connect Specification](http://openid.net/specs/openid-connect-core-1_0.html#AuthRequest)
+
+
 ```sh 
 GET /authorize?
     response_type=code%20id_token
@@ -37,7 +44,7 @@ GET /authorize?
   Host: server.example.com
 ```
 
-### Coding Example
+### Python Coding Example
 ```sh
 # Instantiate the client
 from oic.oic import Client
@@ -147,18 +154,25 @@ aresp is an instance of an AuthorizationResponse or an ErrorResponse. The latter
 
 ---
 
-## ID Token
-
-### ID Token Request
+## ID Token Request
 
 ### Description
 The ID token resembles the concept of an identity card, in a standard JWT format, signed by the OpenID Provider (OP). To obtain one the client needs to send the user to their OP with an authentication request.
 
 ### Protocol Example
 
-```sh
+The diagram below shows the content of the `ID Token Request`:
 
+![ID token Request Type](images/IDTokenRequest.JPG)
 
+```json
+POST /token HTTP/1.1
+	Host: server.example.com
+	Content-Type: application/x-www-form-urlencoded
+	Authorization: Basic czZCaGRSa3F0MzpnWDFmQmF0M2JW
+		grant_type=authorization_code
+		&code=SplxlOBeZQQYbYS6WxSbIA
+		&redirect_uri=https%3A%2F%2Fclient.example.org%2Fcb
 ```	
 
 ### Python Coding Example
