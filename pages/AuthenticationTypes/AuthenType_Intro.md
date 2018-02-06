@@ -2,7 +2,7 @@
 title: Introduction to Authentication types
 keywords: homepage
 sidebar: overview_sidebar
-permalink: Authen_type_Intro.html
+permalink: AuthenType_Intro.html
 toc: true
 summary: A brief introduction to Care Access Service (CAS).
 ---
@@ -12,9 +12,9 @@ This section will explore the different Authentication Types used within NHS Car
 
 > * [Legacy Smart Card Authentication](AuthType_SmartCard.html)
 > * [OpenID connect Smart Card Authentication](AuthType_OpenIDC_SC.html)
-> * One time Password (OATH)
-> * HMAC Once Time Password (HOTP)
-> * Push Notification
-> * Knowledge Based Authentication
-> * Certificates (X509)
-> * Device Based
+> * [One time Password (OATH)](AuthType_OATH.html)
+> * [HMAC Once Time Password (HOTP)](AuthType_HOPT.html)
+> * [Push Notification](AuthType_PN.html)
+> * [Knowledge Based Authentication](AuthType_KBAuth.html)
+> * [Certificates (X509)](AuthType_Certs.html)
+> * [Device Based](AuthType_DeviceBased.html)

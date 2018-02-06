@@ -46,7 +46,7 @@ entries:
     output: web
     folderitems:
     - title: Introduction 
-      url: /Authen_type_Intro.html
+      url: /AuthenType_Intro.html
       output: web 
     - title: Legacy Smart Card Authentication
       url: /AuthType_SmartCard.html

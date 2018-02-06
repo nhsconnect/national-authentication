@@ -8,4 +8,6 @@ summary: A brief introduction to Environment for Care Access Service (CAS).
 ---
 
 
+![Under Construction](images/UnderConstruction.jpg)
+
 This section will describe the environment for the NHS Care Access Service:
