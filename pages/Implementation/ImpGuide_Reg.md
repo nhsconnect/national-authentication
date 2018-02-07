@@ -10,7 +10,7 @@ summary: This section provide a guide on registering a user
 
 
 
-(this section is still under discussion – nick sykes)
+(this section is still under discussion and `subject to change`)
 
 ![Under Construction](images/UnderConstruction.jpg)
 
