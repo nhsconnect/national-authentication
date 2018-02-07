@@ -9,7 +9,7 @@ summary: A brief introduction to Certificates (X509) Authentication type within 
 
 [](![Digital Certificates](images/DigitalCertificates.jpg))
 
-<img src="./images/DigitalCertificates.jpg" alt="Authentication types Digitial Certificates"/>
+|<img src="./images/DigitalCertificates.jpg" alt="Authentication types Digitial Certificates"/>|
 
 
 
