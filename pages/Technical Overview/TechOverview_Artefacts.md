@@ -122,14 +122,14 @@ As a minimum the Access token will contain the following claims:
 |----|-----|-----|----|
 |iss|Issuer Identifier|Mandatory |Requesting systems issuer URI. For tokens issued by the national authentication solution, this will be the URL of that national service. For tokens issued by a different issuer, this will hold the URL for the issuer. |
 |sub|Subject Identifier|Mandatory|A unique identifier for the End-User.  An identifier for the person or system that has been authorised for access. In most cases this will be an identifier for a member of staff, identified by a Spine URP ID (see RBAC) for details|
-|aud|Audience(s)|Mandatory|The identifier of the Relying Party and any other parties intended as a recipient, e.g. API endpoint URL. The URI for the API Endpoint. This will be the fully qualified endpoint address returned to the Consumer by the SDS endpoint lookup service as the value of nhsMhsEndPoint. |
+|aud|Audience(s)|Mandatory|The identifier of the Relying Party and any other parties intended as a recipient, e.g. API endpoint URL. The URI for the API Endpoint. This will be the fully qualified endpoint address returned to the Consumer by the SDS endpoint lookup service as the value of `nhsMhsEndPoint`. |
 |exp|Expiration|Mandatory|The time on or after which the Access Token must not be accepted for processing.|
 |iat|Issuance Time|Mandatory|The time at which the JWT was issued.|
-|reason_for_request| | | Purpose for which access is being requested. This is currently limited to one of the following values: **directcare, secondaryuses or patientaccess**.|
-|requested_scope| | | Data being requested:  This is a space-separated list of the scopes authorised for this user. Individual APIs will check this list to establish whether the authorisation grants access to the data being request by the client, and will reject the call if the appropriate scopes have not been granted in the token.  |
-|requesting_system | | | Identifier for the system or device making the request.  This is an identifier for the deployed client system that has been authorised to make API calls. In the case of Spine-enabled clients (or those using the SSP to broker API calls), this will be a Spine Accredited System ID (ASID). The naming system prefix for the ASID will be https://fhir.nhs.uk/Id/accredited-system |
-|requesting_organization | |Optional| Organisation making the request.  This is the ODS code of the care organisation from where the request originates.The naming system prefix for the ODS code will be https://fhir.nhs.uk/Id/ods-organization-code|
-|requesting_user | |Optional|Health or Social Care professional making the request |
+|reason_for_request|n/a | | Purpose for which access is being requested. This is currently limited to one of the following values: `**directcare**`, `**secondaryuses**` or `**patientaccess**`.|
+|requested_scope|n/a | | Data being requested:  This is a space-separated list of the scopes authorised for this user. Individual APIs will check this list to establish whether the authorisation grants access to the data being request by the client, and will reject the call if the appropriate scopes have not been granted in the token.  |
+|requesting_system |n/a |n/a | Identifier for the system or device making the request.  This is an identifier for the deployed client system that has been authorised to make API calls. In the case of Spine-enabled clients (or those using the SSP to broker API calls), this will be a Spine Accredited System ID (ASID). The naming system prefix for the ASID will be `https://fhir.nhs.uk/Id/accredited-system` |
+|requesting_organization |n/a |Optional| Organisation making the request.  This is the ODS code of the care organisation from where the request originates.The naming system prefix for the ODS code will be `https://fhir.nhs.uk/Id/ods-organization-code`|
+|requesting_user |n/a |Optional|Health or Social Care professional making the request |
 
 
 
@@ -154,7 +154,7 @@ As a minimum the Access token will contain the following claims:
 
 ### Access Token Example (JWT)
 
-The final output is three Base64url encoded strings separated by dots (note - there is some canonicalisation done to the JSON before it is Base64url encoded, which the JWT code libraries will do for you).
+The final output is three `Base64url` encoded strings separated by dots (note - there is some canonicalisation done to the JSON before it is `Base64ur`l encoded, which the JWT code libraries will do for you).
 
 ```shell
 eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJpc3MiOiJodHRwOi8vZWMyLTU0LTE5NC0xMDktMTg0LmV1LXdlc3QtMS5jb21wdXRlLmFtYXpvbmF3cy5jb20vIy9zZWFyY2giLCJzdWIiOiIxIiwiYXVkIjoiaHR0cHM6Ly9hdXRob3JpemUuZmhpci5uaHMubmV0L3Rva2VuIiwiZXhwIjoxNDgxMjUyMjc1LCJpYXQiOjE0ODA5NTIyNzUsInJlYXNvbl9mb3JfcmVxdWVzdCI6ImRpcmVjdGNhcmUiLCJyZXF1ZXN0ZWRfcmVjb3JkIjp7InJlc291cmNlVHlwZSI6IlBhdGllbnQiLCJpZGVudGlmaWVyIjpbeyJzeXN0ZW0iOiJodHRwOi8vZmhpci5uaHMubmV0L0lkL25ocy1udW1iZXIiLCJ2YWx1ZSI6IjkwMDAwMDAwMzMifV19LCJyZXF1ZXN0ZWRfc2NvcGUiOiJwYXRpZW50LyoucmVhZCIsInJlcXVlc3RpbmdfZGV2aWNlIjp7InJlc291cmNlVHlwZSI6IkRldmljZSIsImlkIjoiMSIsImlkZW50aWZpZXIiOlt7InN5c3RlbSI6IldlYiBJbnRlcmZhY2UiLCJ2YWx1ZSI6IkdQIENvbm5lY3QgRGVtb25zdHJhdG9yIn1dLCJtb2RlbCI6IkRlbW9uc3RyYXRvciIsInZlcnNpb24iOiIxLjAifSwicmVxdWVzdGluZ19vcmdhbml6YXRpb24iOnsicmVzb3VyY2VUeXBlIjoiT3JnYW5pemF0aW9uIiwiaWQiOiIxIiwiaWRlbnRpZmllciI6W3sic3lzdGVtIjoiaHR0cDovL2ZoaXIubmhzLm5ldC9JZC9vZHMtb3JnYW5pemF0aW9uLWNvZGUiLCJ2YWx1ZSI6IltPRFNDb2RlXSJ9XSwibmFtZSI6IkdQIENvbm5lY3QgRGVtb25zdHJhdG9yIn0sInJlcXVlc3RpbmdfcHJhY3RpdGlvbmVyIjp7InJlc291cmNlVHlwZSI6IlByYWN0aXRpb25lciIsImlkIjoiMSIsImlkZW50aWZpZXIiOlt7InN5c3RlbSI6Imh0dHA6Ly9maGlyLm5ocy5uZXQvc2RzLXVzZXItaWQiLCJ2YWx1ZSI6IkcxMzU3OTEzNSJ9LHsic3lzdGVtIjoibG9jYWxTeXN0ZW0iLCJ2YWx1ZSI6IjEifV0sIm5hbWUiOnsiZmFtaWx5IjpbIkRlbW9uc3RyYXRvciJdLCJnaXZlbiI6WyJHUENvbm5lY3QiXSwicHJlZml4IjpbIk1yIl19fX0.
@@ -188,7 +188,7 @@ A successful request will result in a JSON object containing claims about the En
 
 An example JSON object is given below:
 
-```
+```json
   {
    "sub": "248289761001",
    "name": "Jane Doe",
