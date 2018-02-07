@@ -21,11 +21,13 @@ Four steps are involved in getting going from scratch:
 ### Create your basic ASP.NET Core web application
 To create you new web site just create a new project in VS 2017 and choose the ASP.NET Core Web Application
 
-![ASnet Appl](images/ASPEx1.jpg)
+
+<img src="./images/ASPEx1.jpg" alt="ASP.net"/>
 
 Next you just pick Web Application with no authentiation.
 
-![asp net 2](images/ASPEx2.jpg)
+
+<img src="./images/ASPEx2.jpg" alt="ASP.net"/>
 
 Next get the [Microsoft Middleware OpenID Connect packages](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.OpenIdConnect/)
 

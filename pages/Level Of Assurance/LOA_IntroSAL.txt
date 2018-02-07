@@ -10,6 +10,5 @@ summary: An brief introduction to Security Assurance Levels for Care Access Serv
 
 The level of Assurance is going through the governance process.
 
----
 
-![Under Construction](images/UnderConstruction.jpg)
+

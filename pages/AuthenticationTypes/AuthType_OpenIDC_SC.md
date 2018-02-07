@@ -8,5 +8,7 @@ summary: A brief introduction to Legacy OpenID Connect Smart Card Authentication
 ---
 
 |**OpenId Connect Smart Card Authentication**|
-|![OpenId Connect](images/OpenIDConnect.jpg)|
+|<img src="./images/OpenIDConnect.jpg" alt="OpenID Connect Logo"/>|
 |This will allow client applications to authenticate via the NHS Digital Smart-card Identity Agent when using the OpenID Connect interface.|
+
+

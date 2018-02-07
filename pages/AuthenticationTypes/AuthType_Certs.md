@@ -7,7 +7,13 @@ toc: true
 summary: A brief introduction to Certificates (X509) Authentication type within NHS Digital's Care Access Service.
 ---
 
-![Digital Certificates](images/DigitalCertificates.jpg)
+[](![Digital Certificates](images/DigitalCertificates.jpg))
+
+<img src="./images/DigitalCertificates.jpg" alt="Authentication types Digitial Certificates"/>
+
+
+
+
 
 X.509 digital certificates can enable secure authentication without the need for user names and passwords or other credentials. 
 
