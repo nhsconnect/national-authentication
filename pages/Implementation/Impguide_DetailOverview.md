@@ -21,8 +21,8 @@ The diagram below shows the detailed Authorisation Code Flow.
 | Step| Description|
 | ----- | --------- |
 |1| The end user prepares the authentication request by entering the user credentials stipulated by the security policy of NHS.|
-|2| The relying party will validate end user against the credentials held its local user database.|
-|3| The relying party will redirect the User Agent to Authentication Server.|
+|2| The Relying Party will validate end user against the credentials held its local user database.|
+|3| The Relying Party will redirect the User Agent to Authentication Server.|
 |4|When a Relying Party requires that an End-User is authenticated they should cause a HTTP GET request over TLS to be sent from the End-User’s user agent to the OpenID Provider’s authorisation endpoint. The request may be generated indirectly via a HTTP 302 redirect response (for example in response to a user attempting to access a protected resource) or directly e.g. as a result of a login button being hit. The following parameters muist be included in the access request: **Response_Type = code**, **Scope=openID**, **Profile**, **Email**, **Client_id**, **Redirect_uri, state**|
 |5|The Authorisation Server will ask consent from the User.  |
 |6|It is optional for the User Agent to grant consent.  |
@@ -34,12 +34,12 @@ The diagram below shows the detailed Authorisation Code Flow.
 |12| Ther Relying Party will validate the ID or the Access Token against the identity information held on its local identity data store. |
 |13| The relying party will request for additional information about the user in the form of claims.  The [Access Token] will be included in request for the additional information. |
 |14| The Authorisation Server will validate the [Access Token]. |
-|15| The Authroisation Server will request additional claims from the user store. |
+|15| The Authorisation Server will request additional claims from the user store. |
 |16| The user end point will send the additional claims requested |
 |17| Upon receiving the additional claims for the user the Relying Party will request `access` to the resource.  An [Access Token] is included in the request for Resources. |
 |18| The Resource Server will validate the [Access Token] received from the Relying Party against the `access code` held for the Relying Party..|
 |19| The Resource Server can request additional claims from the Authorisation Server. |
-|20| The Authroisation Server will validate the [Access Token] against the `Token Database` held by the Authorisation Server. |
+|20| The Authorisation Server will validate the [Access Token] against the `Token Database` held by the Authorisation Server. |
 |21| The Authorisation Server will redirect the additional claim request to the User Endpoint. |
 |22| The [`User Endpoint`](GlossaryTerms.html) will return additional claims to the - Resource Server |
 |23|  The Resource Server will grant access by returning the resource to the Relying Party|

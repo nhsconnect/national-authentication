@@ -24,7 +24,7 @@ To create you new web site just create a new project in VS 2017 and choose the A
 
 <img src="./images/ASPEx1.jpg" alt="ASP.net"/>
 
-Next you just pick Web Application with no authentiation.
+Next you just pick Web Application with no authentication.
 
 
 <img src="./images/ASPEx2.jpg" alt="ASP.net"/>
