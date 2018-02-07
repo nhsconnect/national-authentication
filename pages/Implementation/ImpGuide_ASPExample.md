@@ -23,12 +23,12 @@ To create you new web site just create a new project in VS 2017 and choose the A
 
 
 
-|<img src="./images/ASPEx1.jpg" alt="ASPnet"/>|
+|<img src="./images/ASPNET1.JPG" alt="ASPnet"/>|
 
 Next you just pick Web Application with no authentication.
 
 
-|<img src="./images/ASPEx2.jpg" alt="ASPnet"/>|
+|<img src="./images/ASPNET2.JPG" alt="ASPnet"/>|
 
 Next get the [Microsoft Middleware OpenID Connect packages](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.OpenIdConnect/)
 
