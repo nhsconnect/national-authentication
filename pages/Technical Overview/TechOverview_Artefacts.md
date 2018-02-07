@@ -21,7 +21,7 @@ The two tokens produced for the Care Access Service are summarised below
 |Token| Description|
 |---|---|
 |ID Token| A JSON Web Token (JWT that contains claims about the authentication event and may contain claims about the End-User. An ID Token is requested using the openid scope. |
-|Access Token| An access tokens is a credential used to access protected resources. It represents specific scopes and durations of access, granted by the resource owner, and enforced by the resource server and authorization.  OAuth 2.0 supports a number of access token types, the type used by OpenID Connect are bearer tokens which can be simply understood as meaning "give access to the bearer of this token". Access tokens can have different formats, structures, and methods of utilization based on the resource server security requirements. However they are represented as a string the structure of which is usually opaque to the client.|
+|Access Token| An access tokens is a credential used to access protected resources. It represents specific scopes and durations of access, granted by the resource owner, and enforced by the resource server and authorisation.  OAuth 2.0 supports a number of access token types, the type used by OpenID Connect are bearer tokens which can be simply understood as meaning "give access to the bearer of this token". Access tokens can have different formats, structures, and methods of utilization based on the resource server security requirements. However they are represented as a string the structure of which is usually opaque to the client.|
 
 
 
@@ -43,7 +43,7 @@ As a minimum the ID token will contain the following claims:
 |aud|Audience(s)| Mandatory|The identifier of the Relying Party and any other parties intended as a recipient.|
 |exp|Expiration|Mandatory |The time on or after which the ID Token must not be accepted for processing.|
 |iat|Issuance Time| Mandatory|The time at which the JWT was issued.|
-|auth_time|Authenication Time| Optional|Time when the End-User authentication occured|
+|auth_time|Authentication Time| Optional|Time when the End-User authentication occured|
 |nonce|...|Optional |String value used to associate a Client session with an ID Token, and to mitigate replay attacks. |
 |acr|Authentication Context Class reference|Optional |Shows the level of assurance|
 |amr|Authentication Method Reference|Optional |This shows the authentication methods used in the authentication, eg One Time Password, Push Notification, Certificates etc|

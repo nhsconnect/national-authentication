@@ -24,7 +24,7 @@ The following key terms are used in the rest of site:
 
 * **ID Token**
 
-  A JSON Web Token ([JWT](https://tools.ietf.org/html/rfc7519) that contains claims about the authentication event and may contain claims about the End-User. An ID Token is requested using the openid scope.
+  A JSON Web Token ([JWT](https://tools.ietf.org/html/rfc7519)) that contains claims about the authentication event and may contain claims about the End-User. An ID Token is requested using the openid scope.
 
 * **Access Token**
 
