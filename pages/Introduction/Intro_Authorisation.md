@@ -24,5 +24,5 @@ The capabilities of the CAS authorisation service are as follows:
 > * Abstracts access rules into a centralised policy engine which can be amended by configuration
 > * Provides standards based access control with built-in consent (OAuth 2.0)
 > * Provides short lived Access tokens & Refresh Tokens to enable efficient and secure access to resources
-> * Provides policy agents which intercept and redirect traffic for authentication and authorization
+> * Provides policy agents which intercept and redirect traffic for authentication and authorisation
 

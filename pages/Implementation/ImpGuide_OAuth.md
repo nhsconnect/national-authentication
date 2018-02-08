@@ -1,5 +1,5 @@
 ---
-title: Implementing Authorization -  OAuth 2.0
+title: Implementing Authorisation -  OAuth 2.0
 keywords: explore, design, reference
 sidebar: overview_sidebar
 permalink: ImpGuide_OAuth.html
@@ -48,7 +48,7 @@ TokenRequest tokenReq = new TokenRequest(
   providerMetadata.getTokenEndpointURI(),
   new ClientSecretBasic(clientInformation.getID(),
                         clientInformation.getSecret()),
-  new AuthorizationCodeGrant(authCode, redirectURI));
+  new authorisationCodeGrant(authCode, redirectURI));
 
 HTTPResponse tokenHTTPResp = null;
 try {
@@ -117,12 +117,12 @@ request_args = {
 }
 
 # client is oic.oic.Client
-client.construct_AuthorizationRequest(request_args=request_args)
+client.construct_authorisationRequest(request_args=request_args)
 ```
 
 ### Supporting Information 
 
-Specific claims can be requested using the Authorization request parameter
+Specific claims can be requested using the authorisation request parameter
 
 
 

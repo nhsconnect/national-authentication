@@ -22,7 +22,7 @@ This section provides an example of implementing key operations within the Authe
 ---
 ## Authentication Request
 ### Description
-The authentication request is done by redirecting the end user to the provider, for more details see the OIDC specification. The redirect URL is built as follows, using the Authorization Code Flow.
+The authentication request is done by redirecting the end user to the provider, for more details see the OIDC specification. The redirect URL is built as follows, using the authorisation Code Flow.
 
 ### Protocol Example
 
@@ -57,7 +57,7 @@ from oic.oic.message import ProviderConfigurationResponse
 
 op_info = ProviderConfigurationResponse(
     version="1.0", issuer="https://example.org/OP/1",
-    authorization_endpoint="https://example.org/OP/1/authz",
+    authorisation_endpoint="https://example.org/OP/1/authz",
     token_endpoint="https://example.org/OP/1/token",
     ... and so on )
 
@@ -90,15 +90,15 @@ args = {
     "state": session["state"]
 }
 # Setup the auth request
-auth_req = client.construct_AuthorizationRequest(request_args=args)
+auth_req = client.construct_authorisationRequest(request_args=args)
 # execute request
-login_url = auth_req.request(client.authorization_endpoint)
+login_url = auth_req.request(client.authorisation_endpoint)
 # redirect to the login url
 return Redirect(login_url)
 ```	
 
 ### Supporting Information
-In this example there is only one  identityprovider so the authorization endpoint URL received as part of a out-of-band manual registration process has been read into client.authorization_endpoint.
+In this example there is only one  identityprovider so the authorisation endpoint URL received as part of a out-of-band manual registration process has been read into client.authorisation_endpoint.
 The CAS Service  provider does not support dynamic client registration, so again  the client id has been received out-of-band and read from configuration into the variable client_uri.
 Make sure `redirectURI` matches a URI known by the provider.
 The `state` and nonce should be stored so they can be retrieved later.
@@ -112,7 +112,7 @@ The `state` and nonce should be stored so they can be retrieved later.
 ## Authorisation Code
 ### Description
 The authentication response is sent from the provider by redirecting the end user to the redirect URI specified in the initial authentication request from the client. 
-The Authorization Code can be extracted from the query part of the redirect URL:
+The authorisation Code can be extracted from the query part of the redirect URL:
 
 
 ### Protocol Example
@@ -130,14 +130,14 @@ HTTP/1.1 302 Found
 
 ### Python Coding Example
 ```sh
-from oic.oic.message import AuthorizationResponse
+from oic.oic.message import authorisationResponse
 
 # If you're in a WSGI environment
 response = environ["QUERY_STRING"]
 # receive the response
-aresp = client.parse_response(AuthorizationResponse, info=response,
+aresp = client.parse_response(authorisationResponse, info=response,
                               sformat="urlencoded")
-# set the authorization code 
+# set the authorisation code 
 code = aresp["code"]
 # check the state is as expected
 assert aresp["state"] == session["state"]
@@ -146,10 +146,10 @@ assert aresp["state"] == session["state"]
 
 
 ### Supporting Information
-The above example is the authorization code client.
+The above example is the authorisation code client.
 
 When using either implicit or hybrid flow the authentication response is encoded in the fragment part of the URL. This requires additional handling, e.g. using Javascript
-aresp is an instance of an AuthorizationResponse or an ErrorResponse. The latter if an error was returned from the OP. Among other things you should get back in the authentication response is the same state value as you used when sending the request.
+aresp is an instance of an authorisationResponse or an ErrorResponse. The latter if an error was returned from the OP. Among other things you should get back in the authentication response is the same state value as you used when sending the request.
 
 
 ---
@@ -169,8 +169,8 @@ The diagram below shows the content of the `ID Token Request`:
 POST /token HTTP/1.1
 	Host: server.example.com
 	Content-Type: application/x-www-form-urlencoded
-	Authorization: Basic czZCaGRSa3F0MzpnWDFmQmF0M2JW
-		grant_type=authorization_code
+	authorisation: Basic czZCaGRSa3F0MzpnWDFmQmF0M2JW
+		grant_type=authorisation_code
 		&code=SplxlOBeZQQYbYS6WxSbIA
 		&redirect_uri=https%3A%2F%2Fclient.example.org%2Fcb
 ```	
@@ -192,7 +192,7 @@ userinfo = client.do_user_info_request(state=aresp["state"])
 
 ### Supporting Information
 
-When an authorization code (using code or hybrid flow) has been obtained, a token request can be made to get the access token and the id token ‘scope’ has to be the same as in the authentication request.
+When an authorisation code (using code or hybrid flow) has been obtained, a token request can be made to get the access token and the id token ‘scope’ has to be the same as in the authentication request.
 
 If you don’t specify a specific client authentication method, then client_secret_basic is used.
 
