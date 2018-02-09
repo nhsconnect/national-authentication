@@ -85,7 +85,7 @@ app.UseOpenIdConnectAuthentication(options);
 
 The `options` object sets the OpenID Connect middelware behaviour.
 
-Specifically the `AuthorizationScheme` property determines the callback you must register with your OpenID Connect identity provider (see the section at the end on how to do that for easyID). In this case we set it to `oidc` which means the callback will be on/`signin-oidc`. Still, this is handled by the middelware so no need for any additional code.
+Specifically the `authorisationScheme` property determines the callback you must register with your OpenID Connect identity provider (see the section at the end on how to do that for easyID). In this case we set it to `oidc` which means the callback will be on/`signin-oidc`. Still, this is handled by the middelware so no need for any additional code.
 We are now ready to authenticate. Before trying it out we just need a protected resource that will display user information.
 
 ### The protected view: Start the login and show the user info
@@ -142,7 +142,7 @@ Now, adding a simple view, `Protected.cshtml`, in the `Views/Home` to display th
 ```
 ## Running the application
 
-To execute an a login flow, remember to set the `Authorization`, the `ClientID`, and the `ClientSecret`. 
+To execute an a login flow, remember to set the `authorisation`, the `ClientID`, and the `ClientSecret`. 
 If you haven’t already set up an CAS ID account, go to [Here](ImpGuide_Reg.html) to do that.
 
 Hit F5 and you’re off. Once the front page has opened up click the Login menu at the top.
