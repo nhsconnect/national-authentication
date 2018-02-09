@@ -105,12 +105,12 @@ else
 
 ```
 
-To implement the `Protected` view which will kick off the authentication process, add a new action to the `HomeController`. Notice the `Authorize` attribute which will start the OIDC flow.
+To implement the `Protected` view which will kick off the authentication process, add a new action to the `HomeController`. Notice the `Authorise` attribute which will start the OIDC flow.
 
 ```sh
-// The Authorize attribute requires the user to be authenticated and will
+// The Authorise attribute requires the user to be authenticated and will
 // kick off the OIDC authentication flow 
-[Microsoft.AspNetCore.Authorization.Authorize]
+[Microsoft.AspNetCore.Authorisation.Authorise]
 public IActionResult Protected()
 {
     return View();
