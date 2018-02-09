@@ -98,7 +98,7 @@ entries:
     - title: Smart on FHIR
       url: /TechOverview_SmartOnFHIR.html
       output: web
-    - title: Artefacts
+    - title: Artefacts - Tokens
       url: /TechOverview_Artefacts.html
       output: web
            
