@@ -52,7 +52,7 @@ The diagram below depicts at a a high level the OpenID Connect authentication pr
 | ----- | --------- |
 |1|The Relying Party sends a request to the OpenID Provider to authenticate the End-User. The request must include the Relying Party’s identity and the openid scope, it may optionally include other scopes e.g. the email scope if the Relying Party wishes to obtain the user’s email address.|
 |2|The OpenID Provider authenticates the End-User using one of the methods available to it and obtains authorisation from the End-user to provide the requested scopes to the identified Relying Party.|
-|3|Once the End-User has been authenticated and has authorized the request the OpenID Provider will respond to the Relying Parting with an id token identifying the End-User and optionally with access and refresh tokens granting access to the userinfo endpoint.|
+|3|Once the End-User has been authenticated and has authorised the request the OpenID Provider will respond to the Relying Parting with an id token identifying the End-User and optionally with access and refresh tokens granting access to the userinfo endpoint.|
 |4|Optionally the Relying Party may request the additional user information (e.g. email address) from the userinfo endpoint by presenting the access token obtained in the previous step.|
 
 
