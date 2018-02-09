@@ -24,7 +24,7 @@ The OAuth and OpenID Connect standards provide a robust, standardised way of aut
 
 In OAuth, a request for authorisation includes one or more "scopes" - these identify the type of resources and operations the client wants to be authorised to access. OAuth itself leaves the structure and content of these scopes open to the implementor to define, and the SMART on FHIR standard defines a standard syntax for scopes that relate to FHIR resources.
 
-The specific structure and syntax of the scopes proposed is defined [here](http://docs.smarthealthit.org/authorization/scopes-and-launch-context/)
+The specific structure and syntax of the scopes proposed is defined [here](http://docs.smarthealthit.org/authorization/scopes-and-launch-context/){:target="_blank"}.
 
 It is worth noting that the SMART on FHIR scopes are deliberately minimal - they are intended to cover the majority of simple use-cases, but there is likely to be some use-cases where a more complex set of permissions is needed. Each nationally defined FHIR API will align wherever possible, but where additional scopes are needed these will be specified in the specification for that API. For example, if a FHIR endpoint included a set of Observation resources about a patient - including some clinical observations and some non-clinical - there is no easy way of specifying that a user is authorised to access the non-clinical Observation resources but not the clinical ones. In cases like this, the additional Scopes will be specified in the relevant API specification.
 
