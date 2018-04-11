@@ -99,7 +99,7 @@ return Redirect(login_url)
 
 ### Supporting Information
 In this example there is only one  identityprovider so the authorisation endpoint URL received as part of a out-of-band manual registration process has been read into client.authorisation_endpoint.
-The CAS Service  provider does not support dynamic client registration, so again  the client id has been received out-of-band and read from configuration into the variable client_uri.
+The NHS Identity Service  provider does not support dynamic client registration, so again  the client id has been received out-of-band and read from configuration into the variable client_uri.
 Make sure `redirectURI` matches a URI known by the provider.
 The `state` and nonce should be stored so they can be retrieved later.
 

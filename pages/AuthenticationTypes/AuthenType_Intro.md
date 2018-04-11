@@ -4,11 +4,11 @@ keywords: homepage
 sidebar: overview_sidebar
 permalink: AuthenType_Intro.html
 toc: true
-summary: A brief introduction to Care Access Service (CAS).
+summary: A brief introduction to NHS Identity.
 ---
-The Care Access Service provides a number of authentication options that can be leveraged depending on the needs of the client users.  
+The NHS Identity provides a number of authentication options that can be leveraged depending on the needs of the client users.  
 
-This section will explore the different Authentication Types used within NHS Care Access Service:
+This section will explore the different Authentication Types used within NHS Identity Service:
 
 > * [Legacy Smart Card Authentication](AuthType_SmartCard.html)
 > * [OpenID connect Smart Card Authentication](AuthType_OpenIDC_SC.html)

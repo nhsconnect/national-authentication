@@ -4,7 +4,7 @@ keywords: homepage
 sidebar: overview_sidebar
 permalink: AuthType_OpenIDC_SC.html
 toc: true
-summary: A brief introduction to Legacy OpenID Connect Smart Card Authentication within NHS Digital's Care Access Service.
+summary: A brief introduction to Legacy OpenID Connect Smart Card Authentication within NHS Identity Service.
 ---
 
 |**OpenId Connect Smart Card Authentication**|

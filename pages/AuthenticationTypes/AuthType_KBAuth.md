@@ -4,7 +4,7 @@ keywords: homepage
 sidebar: overview_sidebar
 permalink: AuthType_KBAuth.html
 toc: true
-summary: A brief introduction to Knowledge Based Authentication within NHS Digital's Care Access Service.
+summary: A brief introduction to Knowledge Based Authentication within NHS Identity Service.
 ---
 
 ![Knowledge based authentication](images/KBAuthentication.jpg)

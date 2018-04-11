@@ -4,7 +4,7 @@ keywords: homepage
 sidebar: overview_sidebar
 permalink: AuthType_HOPT.html
 toc: true
-summary: A brief overview of the HMAC One Time Password Authentication type within NHS Digital's Care Access Service.
+summary: A brief overview of the HMAC One Time Password Authentication type within NHS Identity Service.
 ---
 
 

@@ -4,7 +4,7 @@ keywords: homepage
 sidebar: overview_sidebar
 permalink: LOA_Authentication.html
 toc: true
-summary: An overview of the Security Assurance Level for Authentication for Care Access Service (CAS).
+summary: An overview of the Security Assurance Level for Authentication for NHS Identity.
 ---
 
 Introduction to Security Assurance Level for Authentication

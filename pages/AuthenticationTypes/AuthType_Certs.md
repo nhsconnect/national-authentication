@@ -4,7 +4,7 @@ keywords: homepage
 sidebar: overview_sidebar
 permalink: AuthType_Certs.html
 toc: true
-summary: A brief introduction to Certificates (X509) Authentication type within NHS Digital's Care Access Service.
+summary: A brief introduction to Certificates (X509) Authentication type within NHS Identity Service.
 ---
 
 [](![Digital Certificates](images/DigitalCertificates.jpg))

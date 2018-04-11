@@ -1,24 +1,24 @@
 ---
-title: Introduction to Care Access Services
+title: Introduction to NHS Identity 
 keywords: homepage
 sidebar: overview_sidebar
 permalink: index.html
 toc: true
-summary: A brief introduction to Care Access Service (CAS).
+summary: A brief introduction to NHS Identity.
 ---
 
 
-The diagram below shows an overview of the Care Access Service.
+The diagram below shows an overview of the NHS IdentityService.
 
 <img src="./images/CAS_Overview_WhtBG.JPG" alt="CAS Overview Diagram"/>
 
-Digital identity is the online persona of a subject. In terms of the NHS Digital Care Access Service this will be the national identity for health and social care workers. 
+Digital identity is the online persona of a subject. In terms of the NHS Identity this will be the national identity for health and social care workers. 
 
 A digital identity that is provided by a separate cloud service is a powerful mechanism as it can be consumed many times (from a single logon), it can be linked with every day devices to provide extra contextual information about that user (e.g. location, nearby services) and it can profile the characteristics of the owner(usual times of sign-on, services normally used, location, devices usual used or linked to the user).
 
 Adoption of such a cloud service from a nationally trusted provider such as NHS Digital facilitates cross organisational access without the need for costly middleware components that can tie one organisation to another. It also caters for scale and simplifies management with 1 central service to store authentication & access rules 
 
-The primary objectives of this Care Access Service is to provide:
+The primary objectives of this NHS Identity Service is to provide:
 > * A sufficient level of **assurance** that the user is who they say they are for the sensitivity of digital information they are accessing
 > * A **trusted** secure token representing the users national digital identity in an industry recognised format
 > * A sign-on process that is as frictionless to the user as possible. Aligning to their working patterns and only asking for additional action when necessary.  A single sign-on is the target

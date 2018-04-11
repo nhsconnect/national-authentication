@@ -1,10 +1,10 @@
 ---
-title: The Vision Care Access Service
+title: The Vision: NHS Identity
 keywords: homepage
 sidebar: overview_sidebar
 permalink: Intro_Vision.html
 toc: true
-summary: This section describes the Vision for NHS Digital's Care Access Service.
+summary: This section describes the Vision for NHS Identity Service.
 ---
 
 In alignment with the goals of 2020 Paperless NHS it is the vision of the Access Improvements programme to: 
@@ -24,7 +24,7 @@ The diagram below shows the main functional services offered by the new Care Acc
 
 ![Access Improvement Business Flow](images/ServiceModel -  Access Improvement -  Business View.jpg)
 
-Care Access Service will deliver the following services for Care Professional as well as System (API) Access :
+National Identity will deliver the following services for Care Professional as well as System (API) Access :
 
 * [Authentication Service](Intro_Authentication.html)
 * [Authorisation Service](Intro_Authorisation.html)

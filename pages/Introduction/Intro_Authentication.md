@@ -4,7 +4,7 @@ keywords: homepage
 sidebar: overview_sidebar
 permalink: Intro_Authentication.html
 toc: true
-summary: A brief introduction to the Authentication Service within Care Access Service.
+summary: A brief introduction to the Authentication Service within NHS Identity Service.
 ---
 
 
@@ -17,7 +17,7 @@ The higher the assurance level the more confident a client system can be that th
 
 A higher level of assurance can be gained in 1 of 2 ways:  a subject can use a highly trusted mechanism to prove their identity e.g. A biometric or a cryptographic secret or by adding many factors of proof together e.g. a password **and** a knowledge based secret **and** possession/sole ownership of a protected device such as a phone or smartcard.
 
-The capabilities of the CAS Authentication Service are as follows:
+The capabilities of the NHS Identity Authentication Service are as follows:
 > * It can authenticate against around 1 million care worker identities in its repository; registered and checked to a high level of confidence (LoA 3 – Face to Face combined with passport, driving license checks)
 > * It has many new methods of verifying the subject: One Time Passwords, Push Notifications, Knowledge Based Secrets, Cryptographic Certificates and Smartcards
 > * Multi-factor authentication is supported 

@@ -4,7 +4,7 @@ keywords: homepage
 sidebar: overview_sidebar
 permalink: AuthType_FIDO.html
 toc: true
-summary: A brief introduction to getting started with NHS Digital's Care Access Service.
+summary: A brief introduction to getting started with NHS Identity Service.
 ---
 |![Fido alliance Link](images/FIDOAlliance.jpg)| ![Fidou2F](images/Fido.JPG)|
 

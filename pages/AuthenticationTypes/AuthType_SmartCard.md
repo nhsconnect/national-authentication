@@ -4,7 +4,7 @@ keywords: homepage
 sidebar: overview_sidebar
 permalink: AuthType_SmartCard.html
 toc: true
-summary: A brief introduction to Legacy Smart Card Authentication within NHS Digital's Care Access Service.
+summary: A brief introduction to Legacy Smart Card Authentication within NHS Identity Service.
 ---
 
 |**Legacy Smart Card Authentication**|

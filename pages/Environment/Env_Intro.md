@@ -4,7 +4,7 @@ keywords: homepage
 sidebar: overview_sidebar
 permalink: Env_Intro.html
 toc: true
-summary: A brief introduction to Environment for Care Access Service (CAS).
+summary: A brief introduction to Environment for NHS Identity Service.
 ---
 
 

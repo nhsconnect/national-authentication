@@ -4,7 +4,7 @@ keywords: homepage
 sidebar: overview_sidebar
 permalink: AuthType_DeviceBased.html
 toc: true
-summary: A brief introduction to Device Based Authentication type within NHS Digital's Care Access Service.
+summary: A brief introduction to Device Based Authentication type within NHS Identity Service.
 ---
 
 The Device ID (Match) module provides device fingerprinting functionality for risk-based authentication. 

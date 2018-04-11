@@ -4,7 +4,7 @@ keywords: homepage
 sidebar: overview_sidebar
 permalink: Tech_Actors.html
 toc: true
-summary: A brief introduction to Technical Overview of Care Access Service (CAS).
+summary: A brief introduction to Technical Overview of NHS Identity.
 ---
 
 ## Introduction

@@ -4,7 +4,7 @@ keywords: homepage
 sidebar: overview_sidebar
 permalink: Intro_Authorisation.html
 toc: true
-summary: A brief introduction of the Authorisation Service within NHS Digital's Care Access Service.
+summary: A brief introduction of the Authorisation Service within NHS Identity Service.
 ---
 
 ![Authorisation image](images/IntroAuthorisationService.JPG)

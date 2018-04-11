@@ -1,16 +1,16 @@
 ---
-title: Introduction to Technical Overview of CAS
+title: Introduction to Technical Overview of NHS Identity
 keywords: homepage
 sidebar: overview_sidebar
 permalink: Tech_Intro.html
 toc: true
-summary: A brief introduction to Technical Overview of Care Access Service (CAS).
+summary: A brief introduction to Technical Overview of NHS Identity.
 ---
 ## Introduction
 
-This section describes the basic concepts behind the Care Access Service.  
+This section describes the basic concepts behind the NHS Identity.  
 
-## Care Access Service
+## NHS Identity
 There are three stages to the Care Access Service:
 
 1 -  Creating an Identity
@@ -32,7 +32,7 @@ The rest of these sections will provide an overview of:
 
 2 - OAuth 2.0: used for Authorisation
 
-## Care Access Servcie Scope
+## NHS Identity Scope
 
 There are two functional use cases
 

@@ -16,7 +16,7 @@ The following example shows the how to authenticate a user from an ASP.Net web a
 Four steps are involved in getting going from scratch:
 > 1.	You need VS 2017 and ASP.Net Core Framework set up on your computer. 
 > 2.	Create your basic ASP.NET Core application as a starting point
-> 3.	Modify your application to defer authentication to the CAS Service.
+> 3.	Modify your application to defer authentication to the NHS Identity Service.
 	
 ### Create your basic ASP.NET Core web application
 To create you new web site just create a new project in VS 2017 and choose the ASP.NET Core Web Application
@@ -143,6 +143,6 @@ Now, adding a simple view, `Protected.cshtml`, in the `Views/Home` to display th
 ## Running the application
 
 To execute an a login flow, remember to set the `authorisation`, the `ClientID`, and the `ClientSecret`. 
-If you haven’t already set up an CAS ID account, go to [Here](ImpGuide_Reg.html) to do that.
+If you haven’t already set up an NHS Identity ID account, go to [Here](ImpGuide_Reg.html) to do that.
 
 Hit F5 and you’re off. Once the front page has opened up click the Login menu at the top.

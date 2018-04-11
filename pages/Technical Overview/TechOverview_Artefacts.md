@@ -14,7 +14,7 @@ summary: An overview of the key Artefact used for Authentication and Authorisati
 
 This section describes in more detail some of the data artefacts used in the `Open ID` and `OAuth 2.0` flows.  
 
-The two tokens produced for the Care Access Service are summarised below
+The two tokens produced for the NHS Identity are summarised below
 
 ![ID Access Token](images/IDAccessTokenv1.JPG)
 
@@ -22,6 +22,7 @@ The two tokens produced for the Care Access Service are summarised below
 |---|---|
 |ID Token| A JSON Web Token (JWT) that contains claims about the `authentication` event and may contain claims about the End-User. An ID Token is requested using the openid scope and thus is used during the `authentication` service. |
 |Access Token| An `access tokens` is a credential used to access protected resources. It represents specific scopes and durations of access, granted by the resource owner, and enforced by the resource server and `authorisation`.  OAuth 2.0 supports a number of access token types, the type used by OpenID Connect are bearer tokens which can be simply understood as meaning "give access to the bearer of this token". Access tokens can have different formats, structures, and methods of utilization based on the resource server security requirements. However they are represented as a string the structure of which is usually opaque to the client.|
+
 
 
 

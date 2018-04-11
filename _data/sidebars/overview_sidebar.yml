@@ -1,11 +1,11 @@
 entries:
-- title: Care Access Service
-  product: Care Access Service<br/>
+- title: NHS Identity Service
+  product: NHS Identity Service<br/>
   version: 1.0.0-alpha.1 
   levels: one
   folders:
 
-  - title: Introduction to CAS
+  - title: Introduction to NHS Identity Service
     output: web
     folderitems:
     - title: Introduction 
