@@ -9,6 +9,6 @@ summary: An brief introduction to Security Assurance Levels for NHS Identity Ser
 
 Introduction to Security Assurance Level for Identification.
 
-The level of Assurance is going through the governance process.
+The level of Assurance is going through the governance process
 
 ![Under Construction](images/UnderConstruction.jpg)
