@@ -18,7 +18,7 @@ The full set of specifications describing OpenID Connect can be found at <http:/
 
 OpenID Connect defines three types of authentication flow to cater for different client types: the authorisation Code Flow, the Implicit Flow and the Hybrid Flow. These are briefly described below with the authorisation Code Flow being described in more detail [here](explore_auth_code_flow).
 
-#### authorisation Code Flow
+#### Authorisation Code Flow
 
 This is the most commonly used flow and is used with web applications as well as native applications that utilise a client/server architecture. In this flow rather than return the id, access and refresh Tokens directly to the Relying Party's client component an authorisation code is returned. The Relying Party's server component can then exchange the code for the required tokens. This provides the dual benefits of:
 

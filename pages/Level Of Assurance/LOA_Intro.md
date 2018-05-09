@@ -4,7 +4,7 @@ keywords: homepage
 sidebar: overview_sidebar
 permalink: LOA_Intro.html
 toc: true
-summary: A brief introduction to Security Assurance Levels for Care Access Service (CAS).
+summary: A brief introduction to Security Assurance Levels for NHS Identity Service .
 ---
 
 

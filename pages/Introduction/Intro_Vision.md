@@ -1,5 +1,5 @@
 ---
-title: The Vision: NHS Identity
+title: The Vision  for NHS Identity
 keywords: homepage
 sidebar: overview_sidebar
 permalink: Intro_Vision.html

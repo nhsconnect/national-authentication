@@ -11,7 +11,7 @@ summary: A brief introduction to Technical Overview of NHS Identity.
 This section describes the basic concepts behind the NHS Identity.  
 
 ## NHS Identity
-There are three stages to the Care Access Service:
+There are three stages to the NHS Identity  Service:
 
 1 -  Creating an Identity
 
