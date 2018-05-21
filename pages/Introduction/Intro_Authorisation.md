@@ -17,9 +17,9 @@ The Authorisation solution refers to it’s policy engine to decide what rules a
 
 Each resource will have a number of scopes that define the type of access that can be given to a client subject on that resource e.g. Patient Record Read, Patient Record Write.
 
-The CAS authorisation service primary purpose will be to protect national services such as Patient Demographic Services, Summary Care Record, Electronic Referral Service etc.
+The NHS Identity authorisation service primary purpose will be to protect national services such as Patient Demographic Services, Summary Care Record, Electronic Referral Service etc.
 
-The capabilities of the CAS authorisation service are as follows:
+The capabilities of the NHS Identity authorisation service are as follows:
 
 > * Abstracts access rules into a centralised policy engine which can be amended by configuration
 > * Provides standards based access control with built-in consent (OAuth 2.0)

@@ -11,7 +11,7 @@ summary: A brief introduction to Technical Overview of NHS Identity.
 
 ---
 
-This section will define the actors used during the Authentication and Authorisation Service.  These will bne used throughout this section and in teh detailed NHS implmentation Guide.
+This section will define the actors used during the Authentication and Authorisation Service.  These will be used throughout this section and in the detailed NHS implmentation Guide.
 
 ## Actor List
 
