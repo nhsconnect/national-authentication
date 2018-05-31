@@ -10,7 +10,7 @@ summary: This section describes the Roadmap for NHS Identity Service.
 
 The diagram below shows the Roadmap for NHS Identity Service.
 
-![NHS  Roadmap](images/NHS_Identity_product_roadmap.jpg)
+![NHS  Roadmap](images/NHS_ID_Roadmap.jpg)
 
 
 
