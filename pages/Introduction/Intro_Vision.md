@@ -20,7 +20,7 @@ In alignment with the goals of 2020 Paperless NHS it is the vision of the Access
 <!-- This is a PNG image 
 ![PNG Image](images/Capture.PNG) -->
 
-The diagram below shows the main functional services offered by the new NHA Identity Service.
+The diagram below shows the main functional services offered by the new NHS Identity Service.
 
 ![Access Improvement Business Flow](images/ServiceModel -  Access Improvement -  Business View.jpg)
 
