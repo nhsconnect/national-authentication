@@ -15,7 +15,7 @@ Federation is the agreement between multiple organisations to trust an Identity 
 
 In the context of the NHS Digital Service we will provide a digitally signed national care worker token which can be accepted by many NHS Organisations and 3rd party cloud services as proof of identity 
 
-The capabilities of the NHS Identity Federation Service are:
+NHS Identity Federation Service offers the below benefits:
 
 > * OpenId Connect, SAML or WS-Federation Federated Identity (WS-Federation will allow seamless SSO access to Microsoft services such as NHSMail, Office 365, Skype)
 > * Secure Attribute Exchange for system to system identity data exchange

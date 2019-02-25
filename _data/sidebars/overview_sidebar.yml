@@ -18,145 +18,115 @@ entries:
     - title: Roadmap
       url: /Intro_Roadmap.html
       output: web
-    - title: Authentication Service
-      url: /Intro_Authentication.html
-      output: web      
+  - title: Services offered by NHS Identity
+    output: web
+    folderitems:
+    - title: Introduction 
+      url: /Intro_Services.html
+      output: web  
+    - title: Identity Assurance Service
+      url: /Intro_Identityassurance.html
+      output: web    
+    - title: Identity Management Service
+      url: /Intro_Identitymanagement.html
+      output: web
+      subfolders:
+      - title: Authentication Service
+        output: web
+        subfolderitems:
+        - title: Introduction to Authentication Services
+          url: /Intro_Authentication.html
+          output: web
+        - title: Authentication types
+          url: /AuthenType_Intro.html
+          output: web
+        - title: NHS Identity’s Authentication Roadmap
+          url: /Authen_type_Roadmap.html
+          output: web
+        - title: OpenID Connect Smart Card Authentication
+          url: /AuthType_OpenIDC_SC.html
+          output: web
+        - title: Device Based Authentication
+          url: /AuthType_DeviceBased.html
+          output: web
+        - title: Fido 2.0
+          url: /AuthType_FIDO.html
+          output: web
     - title: Authorisation Service
       url: /Intro_Authorisation.html
-      output: web
-     
-    - title: API Gateway Service
-      url: /Intro_APIGateway.html
       output: web
     - title: Federation Service
       url: /Intro_Federation.html
       output: web
-   
-  - title: Security Assurance Levels
+    - title: Remote Digital Signature Service
+      url: /Intro_Digitalsignature.html
+      output: web   
+  - title: Integrate and onboard to NHS Identity
     output: web
     folderitems:
-    - title: Introduction
-      url: /LOA_Introduction.html
-      output: web
-    - title:  Identification Assurance Levels
-      url: /LOA_Identification.html
-      output: web
-    - title: Authentication Assurance Levels
-      url: /LOA_Authentication.html
-      output: web
-        
-  - title: Authentication Types
+      - title: Introduction 
+        url: /Tech_Introduction.html
+        output: web 
+      - title: High level Onboarding process flow
+        url: /Tech_Highlevelonboard.html
+        output: web
+        subfolders:
+          - title: Self-Discovery to assess Readiness
+            output: web
+            subfolderitems:
+              - title: Introduction
+                url: /Tech_Selfdiscovery.html
+                output: web
+              - title: Assess your Identity Assurance level
+                url: /Tech_AssessIAL.html
+                output: web
+              - title: Assess your Authenticator Assurance level
+                url: /Tech_AssessAAL.html
+                output: web
+              - title: Assess your Federation Assurance level
+                url: /Tech_AssessFAL.html
+                output: web
+      - title: Pre-requisites
+        url: /Tech_Prerequisites.html
+        output: web
+      - title: Onboarding Questionnaire
+        url: /Tech_Questionnaire.html
+        output: web
+        subfolders:
+          - title: Set up Open ID Connect
+            output: web
+            subfolderitems:
+              - title: Introduction to OIDC
+                url: /Tech_OIDCintro.html
+                output: web
+              - title: Configure an OIDC environment
+                url: /Tech_ConfigureOIDC.html
+                output: web
+          - title: Set up NHS Identity’s Sandpit Environment
+            output: web
+            subfolderitems:
+              - title: Introduction to Sandpit Environment
+                url: /Tech_Sandpitintro.html
+                output: web
+              - title: Request access to Sandpit Environment
+                url: /Tech_Sandpitrequest.html
+                output: web
+  - title: Help and Support
     output: web
     folderitems:
-    - title: Introduction 
-      url: /AuthenType_Intro.html
-      output: web 
-    - title: Legacy Smart Card Authentication
-      url: /AuthType_SmartCard.html
+    - title: Contact Us
+      url: /Contact_nhsid.html
       output: web
-    - title: OpenID Connect Smart Card Authentication
-      url: /AuthType_OpenIDC_SC.html
-      output: web
-    - title: One Time Password (OATH)
-      url: /AuthType_OATH.html
-      output: web 
-    - title: HMAC One Time Password (HOTP)
-      url: /AuthType_HOPT.html
-      output: web
-    - title: Push Notification
-      url: /AuthType_PN.html
-      output: web
-    - title: Knowledge Based Authentication
-      url: /AuthType_KBAuth.html
-      output: web
-    - title: Certificates (X509)
-      url: /AuthType_Certs.html
-      output: web
-    - title: Device Based Authentication
-      url: /AuthType_DeviceBased.html
-      output: web
-    - title: Fido 2.0
-      url: /AuthType_FIDO.html
-      output: web
-             
-                
-  - title: Technical Overview
-    output: web
-    folderitems:
-    - title: Introduction 
-      url: /Tech_Intro.html
-      output: web 
-    - title:  Key Concepts
-      url: /Tech_KeyTerms.html
+    - title: Glossary of Terms
+      url: /GlossaryTerms.html
       output: web
     - title: Actor List
       url: /Tech_Actors.html
       output: web
-    - title: Authentication - Open ID Connect
-      url: /TechOverview_oidc.html
-      output: web
-    - title: Authorisation - OAuth 2.0 
-      url: /TechOverview_OAuth.html
-      output: web
-    - title: Smart on FHIR
-      url: /TechOverview_SmartOnFHIR.html
-      output: web
     - title: Artefacts - Tokens
       url: /TechOverview_Artefacts.html
-      output: web
-           
-  - title: Implementation Guidelines
-    output: web
-    folderitems:
-    - title: Introduction
-      url: /ImpGuide_Intro.html
-      output: web
-    - title: Client Libraries
-      url: /ImpGuide_ClientLib.html
-      output: web
-    - title:  Detailed Authentication Code Flow
-      url: /Impguide_DetailOverview.html
-      output: web
-    - title: Registration
-      url: /ImpGuide_Reg.html
-      output: web
-    - title: Implementing Authentication
-      url: /ImpGuide_OIDC.html
-      output: web
-    - title: Implementing Authorisation
-      url: /ImpGuide_OAuth.html
-      output: web
-    - title:  ASP.net Example
-      url: /ImpGuide_ASPExample.html
-      output: web
-    - title:  Java Example
-      url: /ImpGuide_Java_Example.html
-      output: web
-    - title:  Python Example
-      url: /ImpGuide_PythonExample.html
-      output: web   
-    
-     
-     
-  - title: Environment 
-    output: web
-    folderitems:
-    - title: Introduction 
-      url: /Env_Introduction.html
-      output: web 
-   
-     
-  - title:  Other useful resources
-    output: web
-    folderitems:
-    - title: Glossary of Terms
-      url: /GlossaryTerms.html
       output: web
     - title:  Useful links
       url: /OtherInfo_Links.html
       output: web
-    - title: FAQ
-      url: /OtherInfo_FAQ.html
-      output: web
-
-  
+    

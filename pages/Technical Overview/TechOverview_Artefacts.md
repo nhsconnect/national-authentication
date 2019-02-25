@@ -6,10 +6,6 @@ permalink: TechOverview_Artefacts.html
 toc: true
 summary: An overview of the key Artefact used for Authentication and Authorisation.
 ---
-
-{% include important.html content="*NEEDS SIGNIFICANT RE-WRITING AND SIMPLIFYING BASED ON Token TA discussion*" %}
-
-
 ## Introduction
 
 This section describes in more detail some of the data artefacts used in the `Open ID` and `OAuth 2.0` flows.  
@@ -22,12 +18,6 @@ The two tokens produced for the NHS Identity are summarised below
 |---|---|
 |ID Token| A JSON Web Token (JWT) that contains claims about the `authentication` event and may contain claims about the End-User. An ID Token is requested using the openid scope and thus is used during the `authentication` service. |
 |Access Token| An `access tokens` is a credential used to access protected resources. It represents specific scopes and durations of access, granted by the resource owner, and enforced by the resource server and `authorisation`.  OAuth 2.0 supports a number of access token types, the type used by OpenID Connect are bearer tokens which can be simply understood as meaning "give access to the bearer of this token". Access tokens can have different formats, structures, and methods of utilization based on the resource server security requirements. However they are represented as a string the structure of which is usually opaque to the client.|
-
-
-
-
-
-
 
 ## ID Token
 
@@ -106,8 +96,6 @@ XUVrWOLrLl0nx7RkKU8NXNHq-rvKMzqg"
 
 ---
 
-
-
 ## Access Token 
 
 The diagram below shows the content of an Access Token
@@ -115,9 +103,6 @@ The diagram below shows the content of an Access Token
 ![ Key Artefacts ](images/AccessTokenContent.JPG)
 
 As a minimum the Access token will contain the following claims:
-
-
-
 
 |Claim|Name|Cardinality |Description|
 |----|-----|-----|----|
@@ -131,8 +116,6 @@ As a minimum the Access token will contain the following claims:
 |requesting_system |n/a |n/a | Identifier for the system or device making the request.  This is an identifier for the deployed client system that has been authorised to make API calls. In the case of Spine-enabled clients (or those using the SSP to broker API calls), this will be a Spine Accredited System ID (ASID). The naming system prefix for the ASID will be `https://fhir.nhs.uk/Id/accredited-system` |
 |requesting_organization |n/a |Optional| Organisation making the request.  This is the ODS code of the care organisation from where the request originates.The naming system prefix for the ODS code will be `https://fhir.nhs.uk/Id/ods-organization-code`|
 |requesting_user |n/a |Optional|Health or Social Care professional making the request |
-
-
 
 ### Access Token Payload Example ###
 
@@ -160,14 +143,6 @@ The final output is three `Base64url` encoded strings separated by dots (note - 
 ```shell
 eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJpc3MiOiJodHRwOi8vZWMyLTU0LTE5NC0xMDktMTg0LmV1LXdlc3QtMS5jb21wdXRlLmFtYXpvbmF3cy5jb20vIy9zZWFyY2giLCJzdWIiOiIxIiwiYXVkIjoiaHR0cHM6Ly9hdXRob3JpemUuZmhpci5uaHMubmV0L3Rva2VuIiwiZXhwIjoxNDgxMjUyMjc1LCJpYXQiOjE0ODA5NTIyNzUsInJlYXNvbl9mb3JfcmVxdWVzdCI6ImRpcmVjdGNhcmUiLCJyZXF1ZXN0ZWRfcmVjb3JkIjp7InJlc291cmNlVHlwZSI6IlBhdGllbnQiLCJpZGVudGlmaWVyIjpbeyJzeXN0ZW0iOiJodHRwOi8vZmhpci5uaHMubmV0L0lkL25ocy1udW1iZXIiLCJ2YWx1ZSI6IjkwMDAwMDAwMzMifV19LCJyZXF1ZXN0ZWRfc2NvcGUiOiJwYXRpZW50LyoucmVhZCIsInJlcXVlc3RpbmdfZGV2aWNlIjp7InJlc291cmNlVHlwZSI6IkRldmljZSIsImlkIjoiMSIsImlkZW50aWZpZXIiOlt7InN5c3RlbSI6IldlYiBJbnRlcmZhY2UiLCJ2YWx1ZSI6IkdQIENvbm5lY3QgRGVtb25zdHJhdG9yIn1dLCJtb2RlbCI6IkRlbW9uc3RyYXRvciIsInZlcnNpb24iOiIxLjAifSwicmVxdWVzdGluZ19vcmdhbml6YXRpb24iOnsicmVzb3VyY2VUeXBlIjoiT3JnYW5pemF0aW9uIiwiaWQiOiIxIiwiaWRlbnRpZmllciI6W3sic3lzdGVtIjoiaHR0cDovL2ZoaXIubmhzLm5ldC9JZC9vZHMtb3JnYW5pemF0aW9uLWNvZGUiLCJ2YWx1ZSI6IltPRFNDb2RlXSJ9XSwibmFtZSI6IkdQIENvbm5lY3QgRGVtb25zdHJhdG9yIn0sInJlcXVlc3RpbmdfcHJhY3RpdGlvbmVyIjp7InJlc291cmNlVHlwZSI6IlByYWN0aXRpb25lciIsImlkIjoiMSIsImlkZW50aWZpZXIiOlt7InN5c3RlbSI6Imh0dHA6Ly9maGlyLm5ocy5uZXQvc2RzLXVzZXItaWQiLCJ2YWx1ZSI6IkcxMzU3OTEzNSJ9LHsic3lzdGVtIjoibG9jYWxTeXN0ZW0iLCJ2YWx1ZSI6IjEifV0sIm5hbWUiOnsiZmFtaWx5IjpbIkRlbW9uc3RyYXRvciJdLCJnaXZlbiI6WyJHUENvbm5lY3QiXSwicHJlZml4IjpbIk1yIl19fX0.
 ```
-
-
-
-
-
-
-
-
 
 ### Refresh Token
 
@@ -199,5 +174,3 @@ An example JSON object is given below:
    "email": "janedoe@example.com",
   }
 ```
-
-

@@ -1,10 +1,10 @@
 ---
-title: OpenID Connect Smart Card Authentication (Coming Soon)
+title: OpenID Connect Smart Card Authentication
 keywords: homepage
 sidebar: overview_sidebar
 permalink: AuthType_OpenIDC_SC.html
 toc: true
-summary: A brief introduction to Legacy OpenID Connect Smart Card Authentication within NHS Identity Service.
+summary: A brief introduction to OpenID Connect Smart Card Authentication within NHS Identity Service.
 ---
 
 |**OpenId Connect Smart Card Authentication**|
