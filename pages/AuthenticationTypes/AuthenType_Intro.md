@@ -12,34 +12,34 @@ The NHS Identity provides several authentication options that can be leveraged d
 **AAL1:** AAL1 provides some assurance that the claimant controls an authenticator bound to the subscriber’s account. AAL1 requires either single-factor or multi-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator through a secure authentication protocol.
 
 **NHS Identity’s AAL1 authentication supports the following authenticator types:** 
-> * Memorized Secret
-> * Single-Factor One-Time Password (OTP) Device
+> * Memorized Secret.
+> * Single-Factor One-Time Password (OTP) Device.
 
 The other Authentication types suggested by the NIST guidelines are:
-> * Out-of-Band Devices
-> * Look-Up Secret
-> * Multi-Factor OTP Device
-> * Single-Factor Cryptographic Software
-> * Single-Factor Cryptographic Device 
-> * Multi-Factor Cryptographic Software
-> * Multi-Factor Cryptographic Device
+> * Out-of-Band Devices.
+> * Look-Up Secret.
+> * Multi-Factor OTP Device.
+> * Single-Factor Cryptographic Software.
+> * Single-Factor Cryptographic Device. 
+> * Multi-Factor Cryptographic Software.
+> * Multi-Factor Cryptographic Device.
 
 **AAL2:** AAL2 provides high confidence that the claimant controls authenticator(s) bound to the subscriber’s account. Proof of possession and control of two distinct authentication factors is required through secure authentication protocol(s). Approved cryptographic techniques are required at AAL2 and above.
 
 At AAL2, authentication SHALL occur using either a multi-factor authenticator or a combination of two single-factor authenticators. A multi-factor authenticator requires two factors to execute a single authentication event, such as a cryptographically-secure device with an integrated biometric sensor that is required to activate the device.
 
 When a multi-factor authenticator is used, the National Institute of Standards & Technology (NIST) suggests using any of the following:
-> * Multi-Factor OTP Device
-> * Multi-Factor Cryptographic Software
-> * Multi-Factor Cryptographic Device
+> * Multi-Factor OTP Device.
+> * Multi-Factor Cryptographic Software.
+> * Multi-Factor Cryptographic Device.
 
 When a combination of two single-factor authenticators are used, it SHALL include a Memorized Secret authenticator and one possession-based (i.e., “something you have”) authenticator from the following list:
 
-> * Look-Up Secret 
-> * Out-of-Band Device
-> * Single-Factor OTP Device 
-> * Single-Factor Cryptographic Software
-> * Single-Factor Cryptographic Device
+> * Look-Up Secret.
+> * Out-of-Band Device.
+> * Single-Factor OTP Device. 
+> * Single-Factor Cryptographic Software.
+> * Single-Factor Cryptographic Device.
 
 **NHS Identity currently supports a combination of two single-factor authenticators that include a Memorized Secret (i.e.,” something you know”) and a Single-Factor OTP Device (i.e., “something you have”).**
 
@@ -47,10 +47,10 @@ When a combination of two single-factor authenticators are used, it SHALL includ
 
 NIST suggests that AAL3 authentication SHALL occur using one of a combination of authenticators:
 
-> * Multi-Factor Cryptographic Device 
+> * Multi-Factor Cryptographic Device. 
 > * Single-Factor Cryptographic Device used in conjunction with Memorized Secret.
-> * Multi-Factor OTP device (software or hardware) used in conjunction with a Single-Factor Cryptographic Device
-> * Multi-Factor OTP device (hardware only) used in conjunction with a Single-Factor Cryptographic Software
+> * Multi-Factor OTP device (software or hardware) used in conjunction with a Single-Factor Cryptographic Device.
+> * Multi-Factor OTP device (hardware only) used in conjunction with a Single-Factor Cryptographic Software.
 > * Single-Factor OTP device (hardware only) used in conjunction with a Multi-Factor Cryptographic Software Authenticator.
 > * Single-Factor OTP device (hardware only) used in conjunction with a Single-Factor Cryptographic Software Authenticator and a Memorized Secret.
 
