@@ -2,7 +2,7 @@
 title: Introduction to Authentication types
 keywords: homepage
 sidebar: overview_sidebar
-permalink: Authentype_Intro.html
+permalink: AuthenType_Intro.html
 toc: true
 summary: A brief introduction to the Authentication types offered by NHS identity.
 ---
