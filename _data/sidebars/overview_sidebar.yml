@@ -37,8 +37,11 @@ entries:
         - title: Introduction to Authentication Services
           url: /Intro_Authentication.html
           output: web
-        - title: Authentication types
+        - title: Authentication types1
           url: /AuthenType_Intro.html
+          output: web
+        - title: Authentication types
+          url: /AuthenType_Intro1.html
           output: web
         - title: NHS Identity’s Authentication Roadmap
           url: /Authen_type_Roadmap.html
