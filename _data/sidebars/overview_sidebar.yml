@@ -24,9 +24,16 @@ entries:
     - title: Introduction 
       url: /Intro_Services.html
       output: web  
-    - title: Identity Assurance Service
-      url: /Intro_Identityassurance.html
-      output: web    
+      subfolders:
+      - title: Identity Assurance Service
+        output: web
+        subfolderitems:
+        - title: Introduction to Identity Assurance Services
+          url: /Intro_Identityassurance.html
+          output: web
+        - title: User Registration Journey for IAL1
+          url: /IAL1_User_registration.html
+          output: web
     - title: Identity Management Service
       url: /Intro_Identitymanagement.html
       output: web
