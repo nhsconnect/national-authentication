@@ -6,7 +6,7 @@ permalink: AuthType_FIDO.html
 toc: true
 summary: A brief introduction to NHS Identity using FIDO2.
 ---
-|![Fido alliance Link](images/FIDOAlliance.jpg)| ![Fidou2F](images/Fido.JPG)|
+|![Fidou2F](images/Fido.JPG)|
 
 FIDO stands for Fast Identity Online. It is an authentication method designed to leverage and trust the local in-built capabilities (e.g. fingerprint readers, facial recognition etc) of devices to validate who the user is. 
 
@@ -18,4 +18,4 @@ WebAuthn defines a standard web API that can be built into browsers and related 
 
 Major web browsers including Chrome, Firefox and Microsoft Edge have implemented the standards; Android, Windows 10 and related Microsoft technologies also will have built-in support for FIDO Authentication.
 
-Enterprises and online service providers looking to protect themselves and their customers from the risks associated with passwords - including phishing, man-in-the-middle and attacks using stolen credentials - can soon deploy standards-based strong authentication that works through the browser. Deploying FIDO Authentication enables online services to provide choice to users from an interoperable ecosystem of devices people use every day like mobile phones and security keys.
+Enterprises and online service providers looking to protect themselves and their customers from the risks associated with passwords - including phishing, man-in-the-middle and attacks using stolen credentials - can soon use standards-based strong authentication that works through the browser. Using FIDO Authentication enables online services to provide choice to users from an interoperable ecosystem of devices people use every day like mobile phones and security keys.

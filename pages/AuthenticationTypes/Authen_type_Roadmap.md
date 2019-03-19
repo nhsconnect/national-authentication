@@ -10,4 +10,3 @@ As part of NHS Identity's vision for offering the latest and the most advanced A
 
 > * [OpenID connect Smart Card Authentication](AuthType_OpenIDC_SC.html)
 > * [FIDO2 Authentication](AuthType_FIDO.html)
-> * [Device Based Authentication](AuthType_DeviceBased.html)

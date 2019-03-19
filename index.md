@@ -4,13 +4,14 @@ keywords: homepage
 sidebar: home_sidebar
 permalink: index.html
 toc: true
-summary: A brief introduction to NHS Identity.
+summary: A brief introduction to NHS Identity
 ---
-NHS Identity serves as the foundation for our simple and comprehensive Identity and Access Management solution. We help our clients improve the productivity and connectivity of their users and partners. 
 
-NHS identity considers digital identity as the on-line persona of a subject. NHS Identity is a cloud-based solution that provides digital identity services for national health and social care workers. It’s a powerful mechanism as it can be consumed many times from a single logon. It can also be linked with every day devices to provide extra contextual information about that user and it can profile the characteristics of the owner.
+NHS Identity is a cloud-based solution that provides digital identity and access management services to the national health and social care workers. Currently the only way to authenticate the users is over an N3 (HSCN) connection using a Smartcard.  NHS Identity service will be available over the internet which will enable access where an N3 connection is not available and open up use of services to a range of smaller organisations.
 
-NHS Identity facilitates cross organizational access without the need for costly middle ware components that can tie one organization to another. It also caters for scale and simplifies management with one central service to store authentication and access rules.
+Additionally the service will be available to authenticate with a range of alternative devices as well as Smartcards.  This will help users who are mobile as they will still be able to access clinical information at the point of need.
+
+The system also supports federation of identity – meaning that all systems that use the national identity will be able logged into once (for all).It also caters for scale and simplifies management with one central service to store authentication and access rules.
 
 The primary objectives of NHS Identity service are to provide:
 

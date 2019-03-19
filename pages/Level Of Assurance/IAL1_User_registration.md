@@ -11,4 +11,4 @@ NHS Identity has created a registration process for the new users to register at
 
 The IAL1 user registration prototype can be viewed and downloaded from [here](docs/IAL1Userregistrationprototypes.pdf).
 
-The complete user registration process flow can be viewed and downloaded from [here](docs/IAL1Userregistrationprocessflow.pdf).
+The complete IAL1 user registration process flow can be viewed and downloaded from [here](docs/IAL1Userregistrationprocessflow.pdf).

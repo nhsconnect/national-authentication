@@ -53,9 +53,6 @@ entries:
         - title: OpenID Connect Smart Card Authentication
           url: /AuthType_OpenIDC_SC.html
           output: web
-        - title: Device Based Authentication
-          url: /AuthType_DeviceBased.html
-          output: web
         - title: Fido 2.0
           url: /AuthType_FIDO.html
           output: web
