@@ -1,5 +1,5 @@
 ---
-title: User Registration Journey for Identity Assurance Level 1
+title: User Registration Journey for IAL1
 keywords: homepage
 sidebar: overview_sidebar
 permalink: IAL1_User_registration.html

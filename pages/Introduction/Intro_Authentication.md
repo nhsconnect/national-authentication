@@ -1,10 +1,10 @@
 ---
-title: Authentication Service Overview
+title: Introduction to Authentication Service
 keywords: homepage
 sidebar: overview_sidebar
 permalink: Intro_Authentication.html
 toc: true
-summary: A brief introduction to the Authentication Service within NHS Identity Service.
+summary: A brief introduction to NHS Identity's Authentication Service.
 ---
 
 
@@ -13,7 +13,7 @@ summary: A brief introduction to the Authentication Service within NHS Identity 
 
 Authentication is the process that ensures and confirms a subject’s identity to a particular assurance level. The higher the assurance level, the more confident a client system can be that the subject is who they say they are. 
 
-NHS Identity Authentication Service offers the following benefits:
+The NHS Identity Authentication Service offers the following benefits:
 
 > * NHS Identity currently authenticates against around 1 million care worker identities in its repository; registered and checked to a high level of confidence.
 > * Has many new methods of verifying the subject: One Time Passwords, Push Notifications, Knowledge Based Secrets, Biometric touch id, Windows Hello, Cryptographic Certificates, FIDO2 supported devices, OIDC Smartcards etc.

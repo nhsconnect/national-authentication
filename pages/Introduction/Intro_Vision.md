@@ -1,10 +1,10 @@
 ---
-title: The Vision  for NHS Identity
+title: The Vision
 keywords: homepage
 sidebar: overview_sidebar
 permalink: Intro_Vision.html
 toc: true
-summary: This section describes the Vision for NHS Identity Service.
+summary: This section describes the Vision statement for NHS Identity.
 ---
 In alignment with the goals of 2020 Paperless NHS it is the vision of the Access Improvements programme to: 
 

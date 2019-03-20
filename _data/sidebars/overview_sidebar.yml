@@ -1,14 +1,14 @@
 entries:
-- title: NHS Identity Service
-  product: NHS Identity Service<br/>
+- title: NHS Identity
+  product: NHS Identity<br/>
   version: 1.0.0-alpha.1 
   levels: one
   folders:
 
-  - title: Introduction to NHS Identity Service
+  - title: NHS Identity
     output: web
     folderitems:
-    - title: Introduction 
+    - title: Introduction to NHS Identity 
       url: /index.html
       output: web  
       type: homepage
