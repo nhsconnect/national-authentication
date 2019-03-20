@@ -13,7 +13,7 @@ Additionally the service will be available to authenticate with a range of alter
 
 The system also supports federation of identity – meaning that all the systems that use the national identity will be able be logged in once (for all). It also caters for scale and simplifies management with one central service to store authentication and access rules.
 
-The primary objectives of NHS Identity service are to provide:
+The primary objectives of NHS Identity are to provide:
 
 > * A sufficient level of **assurance** that the user is who they say they are for the sensitivity of digital information they are accessing.
 > * A **trusted** secure token representing the user’s national digital identity in an industry recognized format.
