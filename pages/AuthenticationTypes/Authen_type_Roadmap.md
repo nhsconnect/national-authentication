@@ -8,5 +8,5 @@ summary: A brief introduction to the Authentication Types that are on NHS Identi
 ---
 As part of NHS Identity's vision for offering the latest and the most advanced Authentication mechanisms, NHS Identity is exploring the below authentication types in its Roadmap:
 
-> * [OpenID connect Smart Card Authentication](AuthType_OpenIDC_SC.html)
+> * [OpenID connect Smartcard Authentication](AuthType_OpenIDC_SC.html)
 > * [FIDO2 Authentication](AuthType_FIDO.html)

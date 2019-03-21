@@ -50,7 +50,7 @@ entries:
         - title: NHS Identity’s Authentication Roadmap
           url: /Authen_type_Roadmap.html
           output: web
-        - title: OpenID Connect Smart Card Authentication
+        - title: OpenID Connect Smartcard Authentication
           url: /AuthType_OpenIDC_SC.html
           output: web
         - title: Fido 2.0
