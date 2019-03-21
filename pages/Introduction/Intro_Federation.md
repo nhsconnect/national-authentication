@@ -19,4 +19,4 @@ NHS Identity Federation Service offers the below benefits:
 
 > * OpenId Connect, SAML or WS-Federation Federated Identity (WS-Federation will allow seamless SSO access to Microsoft services such as NHSMail, Office 365, Skype)
 > * Secure Attribute Exchange for system to system identity data exchange
-> * Secure Token Service providing a means to exchange tokens across security domains without re-authenticating or re-establishing trust relationaships
+> * Secure Token Service providing a means to exchange tokens across security domains without re-authenticating or re-establishing trust relationships.

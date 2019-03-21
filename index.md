@@ -15,14 +15,14 @@ The system also supports federation of identity – meaning that all the systems
 
 The primary objectives of NHS Identity are to provide:
 
-> * A sufficient level of **assurance** that the user is who they say they are for the sensitivity of digital information they are accessing.
-> * A **trusted** secure token representing the user’s national digital identity in an industry recognized format.
-> * A **frictionless** sign-on process that aligns to the user working patterns, only asking for additional action when necessary. A single sign-on is the target.
-> * Support for **all** IT platforms and devices such as a PC, laptop, tablet, phone or wearable.
-> * Interaction with the service from **any** UK based location (N3 not required).
-> * To be **available** 24x7, 365 days a year.
-> * To **abstract** identity & access into a cloud service that can be easily consumed by many client applications and services no matter what language they are written in and to shield those clients from any changes that happen in that service.
-> * **Protection** for national services ensuring the requester has **legitimate rights** to the resources requested.
+> * A sufficient level of **assurance** that the user is who they say they are for the sensitivity of digital information they are accessing
+> * A **trusted** secure token representing the user’s national digital identity in an industry recognized format
+> * A **frictionless** sign-on process that aligns to the user working patterns, only asking for additional action when necessary. A single sign-on is the target
+> * Support for **all** IT platforms and devices such as a PC, laptop, tablet, phone or wearable
+> * Interaction with the service from **any** UK based location (N3 not required)
+> * To be **available** 24x7, 365 days a year
+> * To **abstract** identity & access into a cloud service that can be easily consumed by many client applications and services no matter what language they are written in and to shield those clients from any changes that happen in that service
+> * **Protection** for national services ensuring the requester has **legitimate rights** to the resources requested
 > * Facilitate flexible, easier ways for authentication by providing **alternatives** to Smartcard.
 
 Please click on the diagram below to see the various mechanisms offered by NHS Identity.
