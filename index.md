@@ -7,7 +7,7 @@ toc: true
 summary: A brief introduction to NHS Identity
 ---
 
-NHS Identity is a cloud-based solution that provides digital identity and access management services to the national health and social care workers. Currently the only way to authenticate the users is over an N3 (HSCN) connection using a Smart card.  NHS Identity will be available over the internet which will enable access where an N3 connection is not available and open up use of services to a range of smaller organisations.
+NHS Identity is a cloud-based solution that provides digital identity and access management services to the national health and social care workers. Currently the only way to authenticate users is over an N3 (HSCN) connection using a Smart card.  NHS Identity will be available over the internet which will enable access where an N3 connection is not available and open up use of services to a range of smaller organisations.
 
 Additionally the service will be available to authenticate with a range of alternative devices as well as Smart cards.  This will help users who are mobile as they will still be able to access clinical information at the point of need.
 
