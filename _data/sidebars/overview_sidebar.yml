@@ -97,7 +97,7 @@ entries:
         url: /Tech_Questionnaire.html
         output: web
         subfolders:
-          - title: Set up Open ID Connect
+          - title: Set up Open ID Connect (OIDC)
             output: web
             subfolderitems:
               - title: Introduction to OIDC
@@ -112,7 +112,7 @@ entries:
               - title: Introduction to Sandpit Environment
                 url: /Tech_Sandpitintro.html
                 output: web
-              - title: Request access to Sandpit Environment
+              - title: Request access to the Sandpit Environment
                 url: /Tech_Sandpitrequest.html
                 output: web
   - title: Help and Support

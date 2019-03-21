@@ -4,7 +4,7 @@ keywords: homepage
 sidebar: overview_sidebar
 permalink: Intro_Federation.html
 toc: true
-summary: A brief introduction Federation within NHS Identity Service.
+summary: A brief introduction to Federation within NHS Identity
 ---
 
 

@@ -4,10 +4,10 @@ keywords: homepage
 sidebar: overview_sidebar
 permalink: Intro_Identitymanagement.html
 toc: true
-summary: A brief introduction to Identity management Service
+summary: A brief introduction to Identity Management Service
 ---
 
-The Identity Management service provides a comprehensive and secure way to manage the complete identity life cycle of the users and services across all kinds of devices. The NHS Identity Management service offers the below advantages: 
+The Identity Management Service provides a comprehensive and secure way to manage the complete identity life cycle of the users and services across all kinds of devices. The NHS Identity Management Service offers the below advantages: 
 
 > * Web scale architecture that is proven to support millions of identities, provisioning thousands of identities per second with high availability. 
 > * Visualize identity relationships through NHS Identity's management console.

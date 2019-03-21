@@ -3,7 +3,7 @@ title: Introduction to OIDC
 keywords: explore, design, reference
 sidebar: overview_sidebar
 permalink: Tech_OIDCintro.html
-summary: An introduction to Open ID Connect.
+summary: An introduction to OpenID Connect
 ---
 
 OpenID Connect 1.0 is a simple identity layer on top of the OAuth 2.0 protocol. It allows Clients to verify the identity of an End-User based on the authentication performed by an authorisation server, as well as to obtain basic profile information about the End-User in an interoperable and REST-like manner.

@@ -4,7 +4,7 @@ keywords: homepage
 sidebar: overview_sidebar
 permalink: TechOverview_Artefacts.html
 toc: true
-summary: An overview of the key Artefact used for Authentication and Authorisation.
+summary: An overview of the Key Artefacts used for Authentication and Authorisation
 ---
 ## Introduction
 

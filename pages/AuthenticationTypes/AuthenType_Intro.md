@@ -4,9 +4,9 @@ keywords: homepage
 sidebar: overview_sidebar
 permalink: AuthenType_Intro.html
 toc: true
-summary: A brief introduction to the Authentication types offered by NHS identity.
+summary: A brief introduction to the Authentication types offered by NHS Identity
 ---
-To satisfy the requirements of a given Authenticator Assurance level (AAL), a claimant SHALL be authenticated with at least a given level of strength to be recognized as a subscriber. The result of an authentication process is an identifier that SHALL be used each time that subscriber authenticates to that Relying Party (RP). Subscriber identifiers SHOULD NOT be reused for a different subject but SHOULD be reused when a previously-enrolled subject is re-enrolled by the Credential service Provider (CSP). Other attributes that identify the subscriber as a unique subject MAY also be provided. 
+To satisfy the requirements of a given Authenticator Assurance Level (AAL), a claimant SHALL be authenticated with at least a given level of strength to be recognized as a subscriber. The result of an authentication process is an identifier that SHALL be used each time that subscriber authenticates to that Relying Party (RP). Subscriber identifiers SHOULD NOT be reused for a different subject but SHOULD be reused when a previously-enrolled subject is re-enrolled by the Credential service Provider (CSP). Other attributes that identify the subscriber as a unique subject MAY also be provided. 
 The NHS Identity provides several authentication options that can be leveraged depending on the needs of the client users.
 
 **AAL1:** AAL1 provides some assurance that the claimant controls an authenticator bound to the subscriber’s account. AAL1 requires either single-factor or multi-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator through a secure authentication protocol.
