@@ -16,6 +16,6 @@ The level of Identity Assurance would be chosen based on the client’s risk pro
 > * IAL3: Physical presence is required for identity proofing. Identifying attributes must be verified by an authorized and trained representative of the CSP. As with IAL2, attributes can be asserted by CSPs to RPs in support of pseudonymous identity with verified attributes.
 ![Identityproofing image](images/identityproofing_userjourney1.png)
 
-NHS Identity is in the process of finalizing the user journeys to support all Identity assurance levels ( IAL1-IAL3 ).
+NHS Identity is in the process of finalising the user journeys to support all Identity assurance levels (IAL1-IAL3).
 
-The next section describes the user registration journey for Identity Assurance Level 1. The user journey's related to the other IALs will be published shortly.
+The next section describes the user registration journey for Identity Assurance Level 1. The user journeys related to the other IALs will be published shortly.

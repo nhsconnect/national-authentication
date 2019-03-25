@@ -1,5 +1,5 @@
 ---
-title: Assess your Authenticator Assurance level
+title: Assess your Authenticator Assurance Level
 keywords: explore, design, reference
 sidebar: overview_sidebar
 permalink: Tech_AssessAAL.html

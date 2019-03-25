@@ -1,5 +1,5 @@
 ---
-title: Introduction to Remote Digital Signature Service
+title: Remote Digital Signature Service
 keywords: homepage
 sidebar: overview_sidebar
 permalink: Intro_Digitalsignature.html
@@ -12,7 +12,7 @@ This situation raises several challenges for e-services: smart cards and tokens 
 
 In this regards, recent regulations in various regions worldwide – like eIDAS in the European Union – have introduced the concept of electronic signatures that are created using a “remote signature creation device”, which means that the signature device is not anymore a personal device under the physical control of the user, but rather it is replaced by cloud-based services offered and managed by a trusted service provider.
 
-User signing keys and certificates are stored centrally, protected via a certified HSM (Common Criteria EAL4+ certified according to EN 419221-5 Protection Profile). There is no need to deploy expensive smartcards and readers, or even USB tokens. Users can easily sign using any device without installing specialist software.
+User signing keys and certificates are stored centrally, protected via a certified HSM (Common Criteria EAL4+ certified according to EN 419221-5 Protection Profile). There is no need to deploy expensive Smartcards and Readers, or even USB tokens. Users can easily sign using any device without installing specialist software.
 
 **Benefits of this Approach:**
 
@@ -26,4 +26,4 @@ Responsive to Encryption Uplift Needs : If an encryption mechanism is suddenly u
 
 Easy Integration : The authorised remote signing solution can be utilized by any health care provider application by making OAuth2 based REST API calls to the Service signing engine.
 
-**NHS Identity understands the importance of offering these benefits to our users and has prioritized to deliver this capability in its future road map.**
+**NHS Identity understands the importance of offering these benefits to our users and has **prioritised** to deliver this capability in its future road map.**

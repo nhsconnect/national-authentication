@@ -1,5 +1,5 @@
 ---
-title: Federation Service Overview
+title: Federation Service
 keywords: homepage
 sidebar: overview_sidebar
 permalink: Intro_Federation.html
@@ -13,7 +13,7 @@ summary: A brief introduction to Federation within NHS Identity
 
 Federation is the agreement between multiple organisations to trust an Identity Providers (IdP) digital identity token and allow access to resources within these organisation based on the attributes contained within it. 
 
-In the context of the NHS Digital Service we will provide a digitally signed national care worker token which can be accepted by many NHS Organisations and 3rd party cloud services as proof of identity 
+In the context of the NHS Digital Service we will provide a digitally signed national care worker token which can be accepted by many NHS Organisations and 3rd party cloud services as proof of identity. 
 
 NHS Identity Federation Service offers the below benefits:
 

@@ -53,7 +53,7 @@ entries:
         - title: OpenID Connect Smartcard Authentication
           url: /AuthType_OpenIDC_SC.html
           output: web
-        - title: Fido 2.0
+        - title: FIDO2 Authentication
           url: /AuthType_FIDO.html
           output: web
     - title: Authorisation Service
@@ -75,25 +75,25 @@ entries:
         url: /Tech_Highlevelonboard.html
         output: web
         subfolders:
-          - title: Self-Discovery to assess Readiness
+          - title: Self-Discovery
             output: web
             subfolderitems:
               - title: Introduction
                 url: /Tech_Selfdiscovery.html
                 output: web
-              - title: Assess your Identity Assurance level
+              - title: Assess your Identity Assurance Level
                 url: /Tech_AssessIAL.html
                 output: web
-              - title: Assess your Authenticator Assurance level
+              - title: Assess your Authenticator Assurance Level
                 url: /Tech_AssessAAL.html
                 output: web
-              - title: Assess your Federation Assurance level
+              - title: Assess your Federation Assurance Level
                 url: /Tech_AssessFAL.html
                 output: web
       - title: Pre-requisites
         url: /Tech_Prerequisites.html
         output: web
-      - title: Onboarding Questionnaire
+      - title: Service Assessment Questionnaire
         url: /Tech_Questionnaire.html
         output: web
         subfolders:

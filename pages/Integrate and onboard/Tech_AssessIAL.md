@@ -1,5 +1,5 @@
 ---
-title: Assess your Identity Assurance level
+title: Assess your Identity Assurance Level
 keywords: explore, design, reference
 sidebar: overview_sidebar
 permalink: Tech_AssessIAL.html

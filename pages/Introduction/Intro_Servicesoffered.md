@@ -1,5 +1,5 @@
 ---
-title: Services Offered by NHS Identity
+title: Services offered by NHS Identity
 keywords: homepage
 sidebar: overview_sidebar
 permalink: Intro_Services.html
