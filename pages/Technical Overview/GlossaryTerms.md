@@ -12,7 +12,7 @@ summary:
 
 
 
-This section defines the Glossary of Terms used within NHS Identity.
+This section defines the Glossary of Terms used within NHS Identity
 
 
 | Term | Definition |

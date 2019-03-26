@@ -1,10 +1,10 @@
 ---
-title: NHS Identity’s Authentication Roadmap
+title: Authentication Roadmap
 keywords: homepage
 sidebar: overview_sidebar
 permalink: Authen_type_Roadmap.html
 toc: true
-summary: A brief introduction to the Authentication Mechanisms that are on NHS Identity Service road map
+summary: A brief introduction to the Authentication Mechanisms that are on NHS Identity's Authentication road map
 ---
 As part of NHS Identity's vision for offering the latest and the most advanced Authentication mechanisms, NHS Identity is exploring the below authentication types in its Roadmap:
 

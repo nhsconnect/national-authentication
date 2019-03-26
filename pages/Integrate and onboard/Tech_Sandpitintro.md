@@ -1,5 +1,5 @@
 ---
-title: Introduction to the NHS Identity’s Sandpit Environment
+title: Introduction to Sandpit Environment
 keywords: homepage
 sidebar: overview_sidebar
 permalink: Tech_Sandpitintro.html

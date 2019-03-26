@@ -28,7 +28,7 @@ entries:
       - title: Identity Assurance Service
         output: web
         subfolderitems:
-        - title: Introduction to Identity Assurance Services
+        - title: Introduction to Identity Assurance Service
           url: /Intro_Identityassurance.html
           output: web
         - title: User Registration Journey for IAL1
@@ -41,13 +41,13 @@ entries:
       - title: Authentication Service
         output: web
         subfolderitems:
-        - title: Introduction to Authentication Services
+        - title: Introduction to Authentication Service
           url: /Intro_Authentication.html
           output: web
         - title: Authentication types
           url: /AuthenType_Intro.html
           output: web
-        - title: NHS Identity’s Authentication Roadmap
+        - title: Authentication Roadmap
           url: /Authen_type_Roadmap.html
           output: web
         - title: OpenID Connect Smartcard Authentication
@@ -121,13 +121,13 @@ entries:
     - title: Contact Us
       url: /Contact_nhsid.html
       output: web
-    - title: Glossary of Terms
+    - title: Glossary
       url: /GlossaryTerms.html
       output: web
-    - title: Actor List
+    - title: Actors
       url: /Tech_Actors.html
       output: web
-    - title: Artefacts - Tokens
+    - title: ID and Access Tokens
       url: /TechOverview_Artefacts.html
       output: web
     - title:  Useful links

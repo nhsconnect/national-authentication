@@ -1,5 +1,5 @@
 ---
-title: Authorisation Service Overview
+title: Authorisation Service
 keywords: homepage
 sidebar: overview_sidebar
 permalink: Intro_Authorisation.html

@@ -1,5 +1,5 @@
 ---
-title: Data Artefacts, ID & Access Token
+title: ID and Access Tokens
 keywords: homepage
 sidebar: overview_sidebar
 permalink: TechOverview_Artefacts.html
