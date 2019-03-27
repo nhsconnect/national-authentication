@@ -26,4 +26,4 @@ Responsive to Encryption Uplift Needs : If an encryption mechanism is suddenly u
 
 Easy Integration : The authorised remote signing solution can be utilized by any health care provider application by making OAuth2 based REST API calls to the Service signing engine.
 
-**NHS Identity understands the importance of offering these benefits to our users and has **prioritised** to deliver this capability in its future road map.**
+**NHS Identity understands the importance of offering these benefits to the users and has **prioritised** to deliver this capability in its future road map.**
