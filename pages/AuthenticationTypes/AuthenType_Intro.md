@@ -54,4 +54,8 @@ NIST suggests that AAL3 authentication SHALL occur using one of a combination of
 > * Single-Factor OTP device (hardware only) used in conjunction with a Multi-Factor Cryptographic Software Authenticator
 > * Single-Factor OTP device (hardware only) used in conjunction with a Single-Factor Cryptographic Software Authenticator and a Memorised Secret.
 
-**NHS Identity would be supporting AAL3 Authentication using Apple Ipads from April 2019. This mechanism would meet the Multi-Factor Cryptographic Device guidelines. FIDO2 would be the next supported authentication mechanism which would be available by Q3 of 2019.**
+**NHS Identity would be supporting AAL3 Authentication using Apple Ipads from April 2019. This mechanism would meet the Multi-Factor Cryptographic Device guidelines.**
+
+**The Privacy Notice to the Smartcard / Authorised Device users could be viewed [here](docs/Apple_Privacy_Policy.pdf).**
+
+**FIDO2 would be the next supported authentication mechanism which would be available by Q3 of 2019.**
