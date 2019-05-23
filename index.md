@@ -26,8 +26,7 @@ The primary objectives of NHS Identity are to provide:
 > * Facilitate flexible, easier ways for authentication by providing **alternatives** to Smartcards.
 
 **Current Status:**
-
-	NHS Identity is currently being run as a **Beta** Service in the Live Environment.
+NHS Identity is currently being run as a **Beta** Service in the Live Environment.
 
 Please click on the diagram below to see the various mechanisms offered by NHS Identity.
 	<a href="images/NHSIdentityoverview.png" target="_blank"><img src="images/NHSIdentityoverview.png"></a>
