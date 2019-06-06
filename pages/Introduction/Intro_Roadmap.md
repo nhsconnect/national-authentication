@@ -8,7 +8,7 @@ summary: This section describes the Product Feature Roadmap for NHS Identity
 ---
 
 
-Please click on the diagram below to see the Roadmap for NHS Identity.
+The diagram below shows the current Roadmap for NHS Identity.
 
 <a href="images/NHS_ID_Roadmap.png" target="_blank"><img src="images/NHS_ID_Roadmap.png"></a>
 
